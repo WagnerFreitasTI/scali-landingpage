@@ -816,7 +816,7 @@ body.is-preload:after {
 
 section {
 	display: flex;
-	height: 100vh;
+	/* height: 100vh; */
 }
 
 
@@ -3600,7 +3600,7 @@ img {
 	}
 
 	.main.fullscreen {
-		height: auto !important;
+		height: 100vh !important;
 	}
 
 	.main.style1 {
