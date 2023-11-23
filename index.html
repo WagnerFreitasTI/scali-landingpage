@@ -242,7 +242,7 @@
 				<p class="parag3">Make Scale by Scale Projects in Langley your home. Register with our
 					team and we will contact you shortly to provide more infomation. </p>
 
-				<form action="#" method="post" class="par-form">
+				<form action="#" method="post" class="par-form" onsubmit="enviarFormulario(); return false;">
 					<label for="fname">First name*</label>
 					<input type="text" id="fname" name="fname" class="text-input" required>
 
@@ -259,7 +259,7 @@
 					<input type="text" id="city" name="city" class="text-input" required>
 					<label for="hearAbout">Where did you hear about us:</label>
 					<select id="hearAbout" name="hearAbout" class="text-input" required>
-						<option class="text-input10" value="Livabl"> </option>
+						<option class="text-input10" value=" "> </option>
 						<option class="text-input10" value="Livabl">Livabl</option>
 						<option class="text-input10" value="Facebook/Instagram">Facebook/Instagram</option>
 						<option class="text-input10" value="Google">Google</option>
@@ -303,6 +303,11 @@
 								href="javascript:void(0)" onclick="openPrivacyModal()">terms</a></label>
 						<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
 						<label for="norobot" style="padding-right: 1em;padding-left: 0.3em;">I’m not a robot</label>
+
+						<input type="checkbox" id="consentCheckbox" name="agreeToConsent" value="yes">
+						<label for="consentCheckbox" style="padding-right: 1em;padding-left: 0.3em;">I agree to the <a
+								href="javascript:void(0)" onclick="openPrivacyModal()">consent</a></label>
+
 						<!-- <div class="g-recaptcha" data-sitekey="6Le-BxkpAAAAAGNxPPFb68Ik08XiKPVt0LguaOmT"></div> -->
 					</div>
 
@@ -519,20 +524,64 @@
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </body>
 
+<script>
+	function enviarFormulario() {
+		// Coleta os dados do formulário
+		var formData = {
+			firstName: document.getElementById('fname').value,
+			lastName: document.getElementById('lname').value,
+			email: document.getElementById('email').value,
+			phone: document.getElementById('phone').value,
+			city: document.getElementById('city').value,
+			hearAbout: document.getElementById('hearAbout').value,
+			areYouRealtor: document.querySelector('input[name="areYouRealtor"]:checked').value,
+			contactMethod: document.querySelectorAll('input[name="contact-method"]:checked').length > 0
+				? Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value)
+				: [],
+			agreeToTerms: document.getElementById('termsCheckbox').checked,
+			verifyRobot: document.getElementById('norobot').checked,
+			agreeToConsent: document.getElementById('consentCheckbox').checked,
+			// Adicione mais campos conforme necessário
+		};
 
 
-<!-- <script>
-	document.addEventListener('scroll', function () {
-		var header = document.getElementById('header');
-		var scrollPosition = window.scrollY;
 
-		if (scrollPosition > 100) {
-			header.style.backgroundColor = '#0b1b30';
-		} else {
-			header.style.backgroundColor = 'transparent';
-		}
-	});
-</script> -->
+		console.log('JSON a ser enviado:', JSON.stringify(formData));
+
+		fetch('https://api.lassocrm.com/v1/registrants', {
+			method: 'POST',
+			headers: {
+
+				'Content-Type': 'application/json',
+				'Authorization': 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjcyMjY1ODI0MDAsInRva2VuRGF0YSI6IntcbiAgXCJwcm9qZWN0SWRcIiA6IDIxODE1LFxuICBcImNsaWVudElkXCIgOiAxMDc2LFxuICBcIm5hbWVcIiA6IFwibGFzc29SZWdpc3RyYXRpb25cIlxufSIsImlzcyI6Ikxhc3NvVG9rZW4iLCJhdWQiOiJMYXNzbyIsInRva2VuSWQiOjQ2MTAyfQ.GeArgFT43cCm2V0DoSeCkQVqaPsXXgqwLaqUJaHRsd58Sy0fDd-MoIF53mqFJalnvuQKVJIA9Zqw0hcv99hA0LrVO6guIZiU-NSeLwBgbuXwI0wkREBDyNnMlrOsGDEceCgY1DfmS_5JgiEjskvzuTtZ7rquBlhsYZ6IjC_6qD29-K8bgMchQG6aXxd45W-bjFtQGddNkfuyP2oILWqPYs3Ng8SPoZo5JvvIESAdFUckXH0-ekcVL0XgbXnYEpsIeuw8-ZEngd0dIdFPNZ7getU3lJ4XAAvwh2FLmET3TDoKcVzE-wOpVPbPuCeM4Uvdgw3U1o7CqDpfZn9mf9vb-Q'
+			},
+			body: JSON.stringify(formData)
+		})
+
+
+			.then(response => {
+				if (!response.ok) {
+					throw new Error('Erro ao enviar o formulário');
+				}
+				return response.json();
+			})
+			.then(data => {
+				console.log('Resposta da API:', data);
+
+			})
+			.catch(error => {
+				console.error('Erro:', error);
+
+			});
+	}
+
+
+	function exibirModalSucesso() {
+		// Lógica para exibir o modal de sucesso
+		var modal = document.querySelector('.check-modal');
+		modal.style.display = 'flex';
+	}
+</script>
 
 
 
