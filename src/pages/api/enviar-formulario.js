@@ -1,9 +1,31 @@
+
+
 export default async function EnviarFormulario(req, res) {
     const formData = req.body;
     console.log('Dados do formulário recebidos:', formData);
 
     // Faça a solicitação para a API do CRM Lasso
     try {
+        const ReCAPTCHAresponse = await fetch('https://www.google.com/recaptcha/api/siteverify', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/x-www-form-urlencoded',
+            },
+            body: new URLSearchParams({
+                secret: process.env.SECKEYS,
+                response: formData.ReCAPTCHA,
+            })
+        });
+        const ReCAPTCHAdata = await ReCAPTCHAresponse.json()
+        if (!ReCAPTCHAdata.success) {
+            console.error('Erro ao enviar o reCaptcha:', ReCAPTCHAdata);
+            res.status(500).json({ error: 'Erro interno do servidor' });
+            return;
+        }
+
+
+
+
         const response = await fetch('https://api.lassocrm.com/v1/registrants', {
             method: 'POST',
             headers: {

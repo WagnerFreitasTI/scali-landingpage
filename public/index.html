@@ -10,6 +10,7 @@
 	<noscript>
 		<link rel="stylesheet" href="assets/css/noscript.css" />
 	</noscript>
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <style>
 
@@ -319,19 +320,16 @@
 								potential buyers. To learn more about various forms of Realtor representation and the
 								choices available to you, please <a href="javascript:void(0)">click here.</a></label>
 						</div> -->
-						<div class="Checkboxers">
-							<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
-							<label for="norobot" style="padding-right: 1em;padding-left: 0.7em;">I’m not a
-								robot</label>
-						</div>
-						<!-- <div class="g-recaptcha" data-sitekey="6Le-BxkpAAAAAGNxPPFb68Ik08XiKPVt0LguaOmT"></div> -->
+
+
 
 					</div>
 
 					<div style="display: flex;">
 
-						<input type="submit" value="SUBMIT" class="form-button">
-						<!-- elabora a função checagem de envio -->
+						<button class="form-button g-recaptcha" data-sitekey="6Lc2tRspAAAAAMLNy6B2O23BagKcxv7DkrXMKrd5"
+							data-callback="onSubmit">Submit</button>
+
 						<div class="check-modal">
 
 							<img src="images/CheckGree.png" alt="OK-Check" class="OK-Check" />
@@ -491,13 +489,13 @@
 				<img src="images/logo.png" alt="Logo 1" class="logo logodown">
 
 
-				<ul class="icons">
+				<!-- <ul class="icons">
 
 					<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
 					<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 					<li><a href="#" class="icon brands fa-youtube-in"><span class="label">YouTube</span></a></li>
 
-				</ul>
+				</ul> -->
 
 
 				<div class="container-icons">
@@ -546,9 +544,9 @@
 </body>
 
 <script>
-    const formContatoRef = document.getElementById("form-contato")
-    formContatoRef.addEventListener("submit", function(event) {
-        event.preventDefault()
+	const formContatoRef = document.getElementById("form-contato")
+	function onSubmit() {
+		event.preventDefault()
 
 		var formData = {
 			"person": {
@@ -562,8 +560,8 @@
 			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
 			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
 			//"agreeToTerms": document.getElementById('termsCheckbox').checked,
-			"verifyRobot": document.getElementById('norobot').checked,
-			"agreeToConsent": document.getElementById('consentCheckbox').checked
+			"agreeToConsent": document.getElementById('consentCheckbox').checked,
+			"ReCAPTCHA": document.getElementById('g-recaptcha-response').value
 		};
 
 
@@ -589,7 +587,7 @@
 				console.error('Erro:', error);
 
 			});
-	});
+	}
 
 	function exibirModalSucesso() {
 
