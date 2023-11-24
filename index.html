@@ -242,7 +242,8 @@
 				<p class="parag3">Make Scale by Scale Projects in Langley your home. Register with our
 					team and we will contact you shortly to provide more infomation. </p>
 
-				<form action="#" method="post" class="par-form" onsubmit="enviarFormulario(); return false;">
+				<form action="/enviar-formulario" method="post" class="par-form"
+					onsubmit="enviarFormulario(); return false;">
 					<label for="fname">First name*</label>
 					<input type="text" id="fname" name="fname" class="text-input" required>
 
@@ -292,23 +293,39 @@
 						<label for="checkbox-phone" style="padding-right: 1em;padding-left: 0.3em;">Phone</label>
 
 						<input type="checkbox" id="email" name="contact-method" value="E-mail">
-						<label for="email" style="width: 8em; padding-right: 1em;padding-left: 0.3em;">E-mail</label>
+						<label for="email" style="width: 6em; padding-right: 1em;padding-left: 0.3em;">E-mail</label>
 
 						<input type="checkbox" id="text" name="contact-method" value="Text">
 						<label for="text" style="padding-right: 1em;padding-left: 0.3em;">Text</label>
 					</div>
-					<div class="div-flex">
-						<input type="checkbox" id="termsCheckbox" name="agreeToTerms" value="yes">
-						<label for="termsCheckbox" style="padding-right: 1em;padding-left: 0.3em;">I agree to the <a
-								href="javascript:void(0)" onclick="openPrivacyModal()">terms</a></label>
-						<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
-						<label for="norobot" style="padding-right: 1em;padding-left: 0.3em;">I’m not a robot</label>
-
-						<input type="checkbox" id="consentCheckbox" name="agreeToConsent" value="yes">
-						<label for="consentCheckbox" style="padding-right: 1em;padding-left: 0.3em;">I agree to the <a
-								href="javascript:void(0)" onclick="openPrivacyModal()">consent</a></label>
-
+					<div class="consentTerm div-flex">
+						<div class="Checkboxers">
+							<input type="checkbox" id="consentCheckbox" name="agreeToConsent" value="yes">
+							<label for="consentCheckbox" class="consentCheck"
+								style="padding-top: 2.1em; padding-left: 0.7em; flex: 1;">Yes,
+								I consent to receiving electronic messages from Scale Projects and Fifth Avenue Real
+								Estate Marketing Ltd. with updates on Scale and other projects that may be of interest
+								to me. If you wish to stop receiving this information at any time, simply check
+								unsubscribe at the bottom of any email received or contact live@scale.ca with
+								unsubscribe in the subject line.</label>
+						</div>
+						<!-- <div class="Checkboxers">
+							<input type="checkbox" id="termsCheckbox" name="agreeToTerms" value="yes">
+							<label for="termsCheckbox" style="padding-left: 0.3em; flex: 1;">I agree to the terms: The
+								information you provide will be kept confidential and used only by Fifth Avenue Real
+								Estate Marketing to enhance your home buying experience and the level of service you
+								receive. The members of our Sales Team are all licensed Real Estate Professionals with
+								Fifth Avenue Real Estate Marketing and therefore are unable to provide representation to
+								potential buyers. To learn more about various forms of Realtor representation and the
+								choices available to you, please <a href="javascript:void(0)">click here.</a></label>
+						</div> -->
+						<div class="Checkboxers">
+							<input type="checkbox" id="norobot" name="verifyRobot" value="yes">
+							<label for="norobot" style="padding-right: 1em;padding-left: 0.7em;">I’m not a
+								robot</label>
+						</div>
 						<!-- <div class="g-recaptcha" data-sitekey="6Le-BxkpAAAAAGNxPPFb68Ik08XiKPVt0LguaOmT"></div> -->
+
 					</div>
 
 					<div style="display: flex;">
@@ -319,8 +336,10 @@
 
 							<img src="images/CheckGree.png" alt="OK-Check" class="OK-Check" />
 							<h3>
-								Thank you for your interest in scale by Scale Projects. One of our Sales Representatives
-								will be in touch shortly to discuss your how Scale can be your perfect home for every
+								Thank you for your interest in scale by Scale Projects. One of our Sales
+								Representatives
+								will be in touch shortly to discuss your how Scale can be your perfect home for
+								every
 								day comfort.
 							</h3>
 						</div>
@@ -528,48 +547,42 @@
 
 <script>
 	function enviarFormulario() {
-		// Coleta os dados do formulário
+
 		var formData = {
-			firstName: document.getElementById('fname').value,
-			lastName: document.getElementById('lname').value,
-			email: document.getElementById('email').value,
-			phone: document.getElementById('phone').value,
-			city: document.getElementById('city').value,
-			hearAbout: document.getElementById('hearAbout').value,
-			areYouRealtor: document.querySelector('input[name="areYouRealtor"]:checked').value,
-			contactMethod: document.querySelectorAll('input[name="contact-method"]:checked').length > 0
-				? Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value)
-				: [],
-			agreeToTerms: document.getElementById('termsCheckbox').checked,
-			verifyRobot: document.getElementById('norobot').checked,
-			agreeToConsent: document.getElementById('consentCheckbox').checked,
-			// Adicione mais campos conforme necessário
+			"person": {
+				"firstName": document.getElementById('fname').value,
+				"lastName": document.getElementById('lname').value,
+			},
+			"email": document.getElementById('email').value,
+			"phone": document.getElementById('phone').value,
+			"city": document.getElementById('city').value,
+			"hearAbout": document.getElementById('hearAbout').value,
+			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
+			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
+			"agreeToTerms": document.getElementById('termsCheckbox').checked,
+			"verifyRobot": document.getElementById('norobot').checked,
+			"agreeToConsent": document.getElementById('consentCheckbox').checked
 		};
 
 
-
-		console.log('JSON a ser enviado:', JSON.stringify(formData));
-
-		fetch('https://api.lassocrm.com/v1/registrants', {
+		fetch('http://localhost:3000/enviar-formulario', {
 			method: 'POST',
 			headers: {
-
-				'Content-Type': 'application/json',
-				'Authorization': 'Bearer eyJhbGciOiJSUzI1NiJ9.eyJleHAiOjcyMjY1ODI0MDAsInRva2VuRGF0YSI6IntcbiAgXCJwcm9qZWN0SWRcIiA6IDIxODE1LFxuICBcImNsaWVudElkXCIgOiAxMDc2LFxuICBcIm5hbWVcIiA6IFwibGFzc29SZWdpc3RyYXRpb25cIlxufSIsImlzcyI6Ikxhc3NvVG9rZW4iLCJhdWQiOiJMYXNzbyIsInRva2VuSWQiOjQ2MTAyfQ.GeArgFT43cCm2V0DoSeCkQVqaPsXXgqwLaqUJaHRsd58Sy0fDd-MoIF53mqFJalnvuQKVJIA9Zqw0hcv99hA0LrVO6guIZiU-NSeLwBgbuXwI0wkREBDyNnMlrOsGDEceCgY1DfmS_5JgiEjskvzuTtZ7rquBlhsYZ6IjC_6qD29-K8bgMchQG6aXxd45W-bjFtQGddNkfuyP2oILWqPYs3Ng8SPoZo5JvvIESAdFUckXH0-ekcVL0XgbXnYEpsIeuw8-ZEngd0dIdFPNZ7getU3lJ4XAAvwh2FLmET3TDoKcVzE-wOpVPbPuCeM4Uvdgw3U1o7CqDpfZn9mf9vb-Q'
+				'Content-Type': 'application/json'
 			},
-			body: JSON.stringify(formData)
+			body: JSON.stringify(formData),
+
 		})
-
-
 			.then(response => {
+				console.log('Resposta do servidor:', response);
 				if (!response.ok) {
 					throw new Error('Erro ao enviar o formulário');
 				}
 				return response.json();
 			})
 			.then(data => {
-				console.log('Resposta da API:', data);
-
+				console.log('Resposta do servidor:', data);
+				exibirModalSucesso();
 			})
 			.catch(error => {
 				console.error('Erro:', error);
@@ -577,13 +590,13 @@
 			});
 	}
 
-
 	function exibirModalSucesso() {
-		// Lógica para exibir o modal de sucesso
+
 		var modal = document.querySelector('.check-modal');
 		modal.style.display = 'flex';
 	}
 </script>
+
 
 
 
@@ -639,34 +652,8 @@
 	}
 </script>
 
-<script>
-	let slideIndex = 1;
-	showSlides(slideIndex);
 
-	function plusSlides(n) {
-		showSlides(slideIndex += n);
-	}
 
-	function currentSlide(n) {
-		showSlides(slideIndex = n);
-	}
-
-	function showSlides(n) {
-		let i;
-		let slides = document.getElementsByClassName("mySlides");
-		let dots = document.getElementsByClassName("dot");
-		if (n > slides.length) { slideIndex = 1 }
-		if (n < 1) { slideIndex = slides.length }
-		for (i = 0; i < slides.length; i++) {
-			slides[i].style.display = "none";
-		}
-		for (i = 0; i < dots.length; i++) {
-			dots[i].className = dots[i].className.replace(" active", "");
-		}
-		slides[slideIndex - 1].style.display = "block";
-		dots[slideIndex - 1].className += " active";
-	}
-</script>
 
 
 </html>
