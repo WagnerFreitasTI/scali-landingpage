@@ -184,7 +184,7 @@ section {
 .main-content {
 	height: 100vh;
 	overflow-y: scroll;
-	scroll-snap-type: y mandatory;
+	/* scroll-snap-type: y mandatory; */
 
 }
 
@@ -1419,7 +1419,7 @@ textarea {
 }
 
 input[type="radio"]:checked {
-	background-color: #0b1b30;
+	background-color: #ffffff;
 	/* Cor de fundo quando o checkbox está marcado */
 }
 
@@ -2434,7 +2434,8 @@ body.is-touch .poptrox-popup .closer {
 	height: auto;
 	width: 18%;
 	position: relative;
-	margin: 6%;
+	margin: 0%;
+	padding-top: 64px;
 }
 
 /* <section id="four" */
@@ -2810,7 +2811,7 @@ body {
 }
 
 input[type="checkbox"]:checked {
-	background-color: #0b1b30;
+	background-color: #ffffff;
 	/* Cor de fundo quando o checkbox está marcado */
 }
 
