@@ -231,26 +231,26 @@ h5 {
 	color: #ffffff !important;
 }
 
-.title-intro{
+.title-intro {
 	position: relative;
-	font-size: 5em;	
+	font-size: 5em;
 	font-family: 'Beliau-Regular';
 	letter-spacing: 0.01em;
 }
 
 .text_sec1 {
-    display: flex;
-    width: 24vw;
-    min-width: 250px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20%;
-    position: relative;
-    margin-left: 14%;
-    line-height: normal;
+	display: flex;
+	width: 24vw;
+	min-width: 250px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-end;
+	justify-content: flex-start;
+	align-items: center;
+	margin-top: 20%;
+	position: relative;
+	margin-left: 14%;
+	line-height: normal;
 }
 
 .title {
@@ -357,13 +357,13 @@ textarea {
 }
 
 .logo2 {
-    height: auto;
-    width: 13vw;
-    min-width: 100px;
-    padding: 3px;
-    max-width: 474px;
-    margin-left: 28%;
-    margin-top: 10%;
+	height: auto;
+	width: 13vw;
+	min-width: 100px;
+	padding: 3px;
+	max-width: 474px;
+	margin-left: 28%;
+	margin-top: 10%;
 }
 
 .header-vertical-line {
@@ -1005,12 +1005,12 @@ h6 {
 }
 
 h3 {
-    font-family: 'Beliau';
-    font-size: 1.8em;
-    margin-bottom: 1rem;
-    font-weight: lighter;
-    text-align: center;
-    margin: 7%;
+	font-family: 'Beliau';
+	font-size: 1.8em;
+	margin-bottom: 1rem;
+	font-weight: lighter;
+	text-align: center;
+	margin: 7%;
 }
 
 .bottom-left {
@@ -2557,13 +2557,14 @@ body {
 }
 
 .parag1 {
-    margin-bottom: 0vh;
-    margin-top: 0vh;
-    font-family: 'Brinnan-Light';
-    font-weight: bold;
-    font-size: 1.2em;
-    text-align: left;
+	margin-bottom: 0vh;
+	margin-top: 0vh;
+	font-family: 'Brinnan-Light';
+	font-weight: bold;
+	font-size: 1.2em;
+	text-align: left;
 }
+
 .main.style1>.content {
 	-moz-transition: opacity 1s ease;
 	-webkit-transition: opacity 1s ease;
@@ -2836,6 +2837,34 @@ input[type="checkbox"]:checked {
 	color: #FFF !important;
 
 }
+
+
+
+.consentTerm {
+	width: 100%;
+	display: flex;
+	line-height: normal;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	justify-content: flex-start;
+	align-items: center;
+	font-size: 0.85em;
+}
+
+
+
+
+.Checkboxers {
+	width: 100%;
+	display: flex;
+	padding: 1em;
+	flex-direction: row;
+	align-items: center;
+	flex-wrap: nowrap;
+}
+
+
 
 
 
@@ -3648,15 +3677,15 @@ img {
 }
 
 #tree {
-    background-color: #263239;
-    height: 58vh;
-    background-size: cover;
-    background-position: left, bottom center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	background-color: #263239;
+	height: 58vh;
+	background-size: cover;
+	background-position: left, bottom center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #four {
@@ -3671,15 +3700,15 @@ img {
 }
 
 #five {
-    background-color: #be694b;
-    height: 58vh;
-    background-size: cover;
-    background-position: left, bottom center;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+	background-color: #be694b;
+	height: 58vh;
+	background-size: cover;
+	background-position: left, bottom center;
+	background-repeat: no-repeat;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 #six {
