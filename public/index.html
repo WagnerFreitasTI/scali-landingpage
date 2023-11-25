@@ -4,7 +4,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Scale Projects</title>
+	<title>Scale</title>
 	<link rel="stylesheet" href="assets/css/main.css" />
 	<link rel="stylesheet" href="assets/css/responsive.css" />
 	<noscript>
@@ -330,23 +330,32 @@
 						<button class="form-button g-recaptcha" data-sitekey="6Lc2tRspAAAAAMLNy6B2O23BagKcxv7DkrXMKrd5"
 							data-callback="onSubmit">Submit</button>
 
-						<div class="check-modal">
-
-							<img src="images/CheckGree.png" alt="OK-Check" class="OK-Check" />
-							<h3>
+						<div id="check-modal">
+							<!-- <img src="images/CheckGree.png" alt="OK-Check" class="OK-Check" /> -->
+							<!-- <h3 style="
+								font-family: 'Brinnan-Light';
+								font-size: 1.1em;
+								margin-bottom: 1rem;
+								font-weight: lighter;
+								text-align: justify;
+								margin: 1%;
+								line-height: normal;
+							">
 								Thank you for your interest in scale by Scale Projects. One of our Sales
 								Representatives
 								will be in touch shortly to discuss your how Scale can be your perfect home for
 								every
 								day comfort.
-							</h3>
+
+							</h3> -->
 						</div>
+
 					</div>
 			</div>
 
 			</form>
 
-			<div id="privacy-modal" style="display: none;padding: 2%;width: 44%;top: 44%;left: 25%;">
+			<div id=" privacy-modal" style="display: none;padding: 2%;width: 44%;top: 44%;left: 25%;">
 				<span id="close-modal" onclick="closePrivacyModal()">&times;</span>
 				<div id="privacy-content" style="line-height: 1.5em; font-size: 0.78em; letter-spacing: 0.08em;">
 					<p>The information you provide will be kept confidential
@@ -459,15 +468,29 @@
 
 				<div id="privacy-modal2">
 					<span id="close-modal" onclick="closePrivacyModal2()">&times;</span>
-					<h2 style="font-size: 0.8em; letter-spacing: 0.1em;">Privacy Policy:</h2>
+					<h2 style="font-size: 0.8em; letter-spacing: 0.1em; font-family: 'Brinnan-Bold';">Privacy Policy:
+					</h2>
 					<hr style="margin-top: 4%;margin-bottom: 5%;border: 0;border-top: 1px solid #0b1b30;">
 					<div id="privacy-content" style="font-size: 0.78em; letter-spacing: 0.08em;">
-						<p>Information provided by Scale Projects, and their partners on this page is subject to change
-							without notice. For
-							the most up to date information on any development please register or contact the
-							presentation
-							centre to
-							directly to speak with a licensed sales team. E.&.O.E.</p>
+						<p>In our continuing effort to improve and maintain the high standard of the Scale development,
+							the developer
+							reserves the right to modify or change plans, layouts, specifications, features, including
+							appliances, and prices
+							without notice. Materials may be substituted with equivalent or better at the developer’s
+							sole discretion. All
+							dimensions and sizes are approximate and are based on architectural measurements. As
+							reverse, flipped
+							and/or mirrored plans occur throughout the development please see architectural plans for
+							current unit
+							layout, if material to your decision to purchase. Illustrations, renderings and marketing
+							materials provided are
+							an artist’s conception and are intended as a general reference only, all subject to change
+							without prior notice
+							and not to be relied upon. Please ask one of the helpful sales staff to reference the
+							current architectural set
+							of construction drawings for the most accurate dimensions and other details at time of sale.
+							E.&O.E. Sales &
+							Marketing provided by Fifth Avenue Real Estate Marketing Ltd. 604-583-2212</p>
 					</div>
 				</div>
 			</div>
@@ -476,17 +499,20 @@
 				<div class="bl-dow">
 					<h6 class="BALANCE">BALANCE</h6>
 					<h3 class="lifestyle lst">
-						<span style="font-size: 0.6em;word-spacing: 0.29em;">is a </span> lifestyle
+						<span
+							style="font-family: 'AddingtonCF-DemiBoldItalic'; font-size: 0.6em;word-spacing: 0.29em;">is
+							a </span> lifestyle
 					</h3>
 				</div>
 				<div>
-					<img src="images/Fifth-Ave.png" alt="FIFTH AVU" class="logo-fifth">
+					<a href="https://fifthave.ca/"><img src="images/Fifth-Ave.png" alt="FIFTH AVU"
+							class="logo-fifth"></a>
 				</div>
 			</div>
 
 
 			<div class="side-r">
-				<img src="images/logo.png" alt="Logo 1" class="logo logodown">
+				<!-- <img src="images/logo.png" alt="Logo 1" class="logo logodown"> -->
 
 
 				<!-- <ul class="icons">
@@ -498,7 +524,7 @@
 				</ul> -->
 
 
-				<div class="container-icons">
+				<!-- <div class="container-icons">
 					<a href="#" target="_blank">
 						<img src="images/icon_fb.png" alt="IconFB">
 					</a>
@@ -510,18 +536,15 @@
 					<a href="#" target="_blank">
 						<img src="images/icon_yt.png" alt="IconYT">
 					</a>
-				</div>
+				</div> -->
 
 
-				<p class="adress"><span style="color: #96a3b7">
-						VISIT US AT THE<br>
-						PRESENTATION CENTRE</span><br><br>
-					<span style="color: #ffffff;">
-						20505 FRASER HWY,<br>
-						LANGLEY BC V3A 4G3<br>
+				<p class="adress"><span style="color: #96a3b7;left: 13%;position: relative;">
+						Presentation Centre Coming Soon!</span><br><br>
+					<!-- <span style="color: #ffffff;">
 					</span><br><br>
 
-					live@scalegroup.ca
+					live@scalegroup.ca -->
 				</p>
 				<a href="#intro"><img src="images/logo2.png" alt="logo2" class="logo2 logo2down"></a>
 
@@ -631,7 +654,52 @@
 	function closePrivacyModal2() {
 		document.getElementById('privacy-modal2').style.display = 'none';
 	}
+
 </script>
+
+<script>
+
+	function exibirModalSucesso() {
+
+		var modalContent = `
+            <h3 style="
+                font-family: 'Brinnan-Light';
+                font-size: 1.1em;
+                margin-bottom: 1rem;
+                font-weight: lighter;
+                text-align: justify;
+                margin: 1%;
+                line-height: normal;
+            ">
+                Thank you for your interest in Scale by Scale Projects. One of our Sales Representatives
+                will be in touch shortly to discuss how Scale can be your perfect home for everyday comfort.
+            </h3>
+        `;
+
+		var popup = document.createElement('div');
+		popup.className = 'popup';
+		popup.innerHTML = modalContent;
+
+
+		var closeBtn = document.createElement('span');
+		closeBtn.className = 'close-btn-thanx';
+		closeBtn.innerHTML = '&times;';
+		closeBtn.onclick = function () {
+			document.body.removeChild(popup);
+		};
+		popup.appendChild(closeBtn);
+
+
+		document.body.appendChild(popup);
+
+
+		popup.style.display = 'block';
+	}
+</script>
+
+
+
+
 
 <script>
 	function showImage(element, imageSrc) {

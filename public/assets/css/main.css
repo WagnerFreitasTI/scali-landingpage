@@ -185,6 +185,7 @@ section {
 	height: 100vh;
 	overflow-y: scroll;
 	/* scroll-snap-type: y mandatory; */
+	overflow-x: hidden;
 
 }
 
@@ -229,6 +230,9 @@ h4 {
 h5 {
 	font-family: 'Brinnan-Bold';
 	color: #ffffff !important;
+}
+h6{
+	font-family: 'Winkell-SuperWide';
 }
 
 .title-intro {
@@ -2550,7 +2554,7 @@ body {
 
 .lifestyle {
 	font-size: 3.4em;
-	font-family: 'Brinnan-Light';
+	font-family: 'AddingtonCF-DemiBoldItalic';
 	line-height: 1em;
 	margin-bottom: 1vh;
 	margin-left: 0vw;
@@ -2678,8 +2682,31 @@ body {
 	height: 1.3em;
 }
 
-.check-modal {
-	display: none;
+#check-modal {
+   
+}
+
+.close-btn-thanx {
+    cursor: pointer;
+    position: absolute;
+    top: 2px;
+    right: 10px;
+    font-size: 57px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 72%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    padding: 46px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+    height: 25vh;
+    width: 36vw;
 }
 
 .text-form {
@@ -3353,7 +3380,7 @@ img {
 	justify-content: center;
 	align-items: flex-end;
 	height: auto;
-	width: 47%;
+	width: 46%;
 	padding-bottom: 1em;
 }
 
@@ -3394,7 +3421,7 @@ img {
 }
 
 .logo2down {
-	width: 71%;
+	width: 82%;
 	position: relative;
 	margin-bottom: 0%;
 	margin-top: 5%;
@@ -3414,11 +3441,11 @@ img {
 
 
 .logo-fifth {
-	left: 43%;
-	height: auto;
-	width: 47%;
-	max-width: 200px;
-	position: relative;
+    left: 31%;
+    height: auto;
+    width: 48%;
+    max-width: 218px;
+    position: relative;
 }
 
 .side-r {
@@ -3463,20 +3490,41 @@ img {
 }
 
 #privacy-modal2 {
-	display: none;
-	position: fixed;
-	top: 66%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	padding: 6%;
-	background-color: white;
-	border: 1px solid #ccc;
-	z-index: 1000;
-	max-width: 80%;
-	font-family: 'Brinnan-Regular';
-	color: #0b1b30;
-	width: 72%;
-	height: 45vh;
+    display: none;
+    position: fixed;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 5%;
+    background-color: white;
+    border: 1px solid #ccc;
+    z-index: 1000;
+    max-width: 80%;
+    font-family: 'Brinnan-Light';
+    color: #0b1b30;
+    width: 72%;
+    height: 64vh;
+}
+.popup {
+    display: none;
+    position: fixed;
+    top: 72%;
+    left: 68%;
+    transform: translate(-50%, -50%);
+    padding: 47px;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+
+.close-btn-thanx {
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.6em;
 }
 
 #close-modal {
@@ -3490,23 +3538,22 @@ img {
 }
 
 .privacy {
-	line-height: 1.48em;
-	font-size: 0.64em;
-	font-family: Brinnan-Light;
-	color: #ffffff;
-	margin-left: 1px;
-	margin-right: 29%;
-	margin-top: 4%;
-	width: 100%;
-	margin-bottom: 2em;
+    line-height: 1.48em;
+    font-size: 0.74em;
+    font-family: Brinnan-Light;
+    color: #ffffff;
+    margin-left: 1px;
+    margin-right: 29%;
+    margin-top: -6%;
+    width: 84%;
+    margin-bottom: 2em;
 }
 
 .logo2down {
-
-	position: relative;
-	margin-bottom: 0%;
-	margin-top: 25%;
-	left: -3%;
+    position: relative;
+    margin-bottom: 0%;
+    margin-top: -15%;
+    left: -21%;
 }
 
 .logodown {
@@ -3593,7 +3640,7 @@ img {
 	background: #0b1b30;
 	color: rgba(185, 186, 187, 0.5);
 
-	height: 57vh;
+	height: 14vh;
 }
 
 #footer>* {
