@@ -3404,12 +3404,12 @@ img {
 
 .side-center .bl-dow {
 	display: flex;
-	width: 70%;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	align-content: center;
-	justify-content: center;
-	align-items: center;
+    width: 70%;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 .menu-footer {
@@ -3644,7 +3644,7 @@ img {
     color: rgba(185, 186, 187, 0.5);
     height: 14vh;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     align-content: stretch;
 }
 

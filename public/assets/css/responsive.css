@@ -8,6 +8,14 @@
         margin-top: 37vh;
         margin-left: 16vw;
     }
+    h3 {
+        font-family: 'Beliau';
+        font-size: 1.8em;
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 3%;
+    }
 }
 
 @media (max-width: 1319px) {
