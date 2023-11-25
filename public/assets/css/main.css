@@ -3362,9 +3362,10 @@ img {
     flex-direction: column;
     align-content: center;
     align-items: center;
-    /* padding-top: 0.8em; */
-    padding-left: 1%;
+    padding-top: 0.8em;
+    /* padding-left: 0%; */
     justify-content: center;
+    margin-right: 28px;
 }
 
 .side-l a {
@@ -3374,14 +3375,15 @@ img {
 }
 
 .side-center {
-	display: flex;
-	flex-direction: row;
-	align-content: flex-end;
-	justify-content: center;
-	align-items: flex-end;
-	height: auto;
-	width: 46%;
-	padding-bottom: 1em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 47%;
+    /* padding-bottom: 1em; */
+    flex-wrap: nowrap;
 }
 
 .side-center .balance {
