@@ -11,18 +11,22 @@
         padding: 5px;
         min-height: 400px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.4em;
     }
+
     .side-center .lst {
         font-size: 1.6em;
         padding-left: 0.2em;
@@ -30,7 +34,9 @@
         margin-bottom: 0;
         letter-spacing: normal;
         min-width: 160px;
+        width: 13vw;
     }
+
     .logo-fifth {
         padding-bottom: 7px;
         left: 0vw;
@@ -53,23 +59,27 @@
 }
 
 @media screen and (min-width: 2090px) and (max-width: 13440px) and (min-height: 1080px) {
-    
-    #five{
+
+    #five {
         height: auto;
     }
-    #tree{
+
+    #tree {
         height: auto;
     }
-    #footer{
+
+    #footer {
         height: auto;
     }
+
     .logo-fifth {
         left: 0vw;
     }
 
-    .logo2down { 
+    .logo2down {
         margin-left: 12%;
     }
+
     .adress {
         margin-top: 70px;
     }
@@ -87,26 +97,31 @@
         height: auto;
         padding: 15px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.6em;
     }
+
     .side-center .lst {
         font-size: 2em;
         min-width: 13vw;
     }
-    
+
     .side-center .bl-dow {
         width: 35vh;
     }
+
     .logo-fifth {
         padding-bottom: 14px;
         left: 10vw;
@@ -141,26 +156,31 @@
         height: auto;
         padding: 15px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.8em;
     }
+
     .side-center .lst {
         font-size: 2em;
         min-width: 13vw;
     }
-    
+
     .side-center .bl-dow {
         width: 35vh;
     }
+
     .logo-fifth {
         padding-bottom: 14px;
         left: 10vw;
@@ -195,26 +215,31 @@
         height: auto;
         padding: 15px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.8em;
     }
+
     .side-center .lst {
         font-size: 2em;
         min-width: 13vw;
     }
-    
+
     .side-center .bl-dow {
         width: 35vh;
     }
+
     .logo-fifth {
         padding-bottom: 14px;
         left: 10vw;
@@ -236,14 +261,14 @@
     }
 
 }
-   
 
-@media(max-width:1680px){
 
-.side-center .lst {
-    font-size: 1.8em;
-    min-width: 11vw;
-}
+@media(max-width:1680px) {
+
+    .side-center .lst {
+        font-size: 1.8em;
+        min-width: 13vw;
+    }
 }
 
 @media (max-width: 1436px) {
@@ -251,6 +276,7 @@
         margin-top: 37vh;
         margin-left: 16vw;
     }
+
     h3 {
         font-family: 'Beliau';
         font-size: 1.8em;
@@ -259,6 +285,7 @@
         text-align: center;
         margin: 3%;
     }
+
     #footer {
         display: flex;
         flex-direction: row;
@@ -270,18 +297,22 @@
         height: auto;
         padding: 5px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.4em;
     }
+
     .side-center .lst {
         font-size: 1.6em;
         padding-left: 0.2em;
@@ -290,9 +321,11 @@
         letter-spacing: normal;
         min-width: 160px;
     }
+
     .side-center .bl-dow {
-           width: 62%;
+        width: 62%;
     }
+
     .logo-fifth {
         padding-bottom: 7px;
         left: 3vw;
@@ -329,6 +362,7 @@
         margin-left: 10vw;
         line-height: normal;
     }
+
     .par-form {
         font-size: 1.1em;
         line-height: 2em;
@@ -362,18 +396,22 @@
         height: auto;
         padding: 5px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.4em;
     }
+
     .side-center .lst {
         font-size: 1.6em;
         padding-left: 0.2em;
@@ -382,6 +420,7 @@
         letter-spacing: normal;
         min-width: 160px;
     }
+
     .logo-fifth {
         padding-bottom: 7px;
         left: 3vw;
@@ -409,6 +448,7 @@
         margin-top: 39vh;
         margin-left: 0vw;
     }
+
     #tree {
         min-height: 500px;
     }
@@ -437,18 +477,22 @@
         height: auto;
         padding: 5px;
     }
+
     .side-l {
         display: flex;
         width: 24vw;
     }
+
     .side-center {
         display: flex;
         width: 45vw;
     }
+
     .BALANCE {
-        
+
         font-size: 1.3em;
     }
+
     .side-center .lst {
         font-size: 1.5em;
         padding-left: 0.2em;
@@ -457,6 +501,7 @@
         letter-spacing: normal;
         min-width: 124px;
     }
+
     .logo-fifth {
         left: 0%;
     }
@@ -479,6 +524,7 @@
         margin-top: 39vh;
         margin-left: 0vw;
     }
+
     .split-section {
         display: flex;
         width: 100vw;
@@ -486,18 +532,21 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .right-half {
         width: 100vw;
     }
+
     .left-half {
         width: 100vw;
         height: 42vh;
     }
-    
+
     /* Estilos gerais do footer */
     #footer>* {
         margin: 0 0 0em 0;
     }
+
     #footer {
         display: flex;
         flex-wrap: wrap;
@@ -507,9 +556,10 @@
         flex-direction: row;
         align-items: center;
         flex-direction: column;
-        height: 38vh;
+        height: auto;
         align-content: center;
     }
+
     .side-l {
         width: 320px;
         height: auto;
@@ -550,8 +600,8 @@
         width: 100%;
         padding-bottom: 1em;
     }
-    
-    
+
+
     .side-center .bl-dow {
         display: flex;
         width: 100%;
@@ -563,9 +613,12 @@
         position: relative;
         padding-right: 32vw;
     }
+
     .side-center .lst {
         width: 183px;
-     }
+        white-space: wrap;
+    }
+
     .logo-fifth {
         left: 0%;
         height: auto;
@@ -614,9 +667,11 @@
         position: relative;
         top: 0%;
     }
+
     .adress {
         font-size: 1.35em;
     }
+
     .side-center .lst {
         font-size: 2em;
         padding-left: 0em;
@@ -624,10 +679,11 @@
         text-align: left;
         padding-left: 10px;
     }
+
     h3 {
         margin: 0%;
     }
-    
+
     .menu-footer {
         display: none;
     }
@@ -638,10 +694,12 @@
 
 
 }
+
 @media (max-height: 750px) {
     #tree {
         min-height: 500px;
-    }  
+    }
+
     #five {
         min-height: 500px;
     }
@@ -680,6 +738,7 @@
         margin-top: 39vh;
         margin-left: 0vw;
     }
+
     .split-section {
         display: flex;
         width: 100vw;
@@ -687,19 +746,22 @@
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .right-half {
         width: 100vw;
     }
+
     .left-half {
         width: 100vw;
         height: 42vh;
     }
 
-    
+
     /* Estilos gerais do footer */
     #footer>* {
         margin: 0 0 0em 0;
     }
+
     #footer {
         display: flex;
         flex-wrap: wrap;
@@ -709,9 +771,10 @@
         flex-direction: row;
         align-items: center;
         flex-direction: column;
-        height: 38vh;
+        height: auto;
         align-content: center;
     }
+
     .side-l {
         width: 320px;
         height: auto;
@@ -752,8 +815,8 @@
         width: 100%;
         padding-bottom: 1em;
     }
-    
-    
+
+
     .side-center .bl-dow {
         display: flex;
         width: 76%;
@@ -765,9 +828,11 @@
         position: relative;
         padding-left: 16vw;
     }
+
     .side-center .lst {
         width: 183px;
-     }
+    }
+
     .logo-fifth {
         left: 0%;
         height: auto;
@@ -816,9 +881,11 @@
         position: relative;
         top: 0%;
     }
+
     .adress {
         font-size: 1.35em;
     }
+
     .side-center .lst {
         font-size: 2em;
         padding-left: 0em;
@@ -826,10 +893,11 @@
         text-align: left;
         padding-left: 10px;
     }
+
     h3 {
         margin: 0%;
     }
-    
+
     .menu-footer {
         display: none;
     }
@@ -845,12 +913,14 @@
 
     body {
         padding: 0;
-        
+
 
     }
+
     .main.style1 {
         padding: 2px;
     }
+
     .header-vertical-line {
         display: none;
     }
@@ -1042,6 +1112,7 @@
     #footer>* {
         margin: 0 0 0em 0;
     }
+
     #footer {
         display: flex;
         flex-wrap: wrap;
@@ -1051,9 +1122,10 @@
         flex-direction: row;
         align-items: center;
         flex-direction: column;
-        height: 38vh;
+        height: auto;
         align-content: center;
     }
+
     .side-l {
         width: 320px;
         height: auto;
@@ -1094,8 +1166,8 @@
         width: 70%;
         padding-bottom: 1em;
     }
-    
-    
+
+
     .side-center .bl-dow {
         display: flex;
         width: 100%;
@@ -1106,12 +1178,15 @@
         align-items: center;
         position: relative;
     }
+
     .side-center .bl-dow {
         padding-left: 23vw;
     }
+
     .side-center .lst {
         width: 183px;
-     }
+    }
+
     .logo-fifth {
         left: 0%;
         height: auto;
@@ -1161,9 +1236,11 @@
         top: 0%;
 
     }
+
     .adress {
         font-size: 1.35em;
     }
+
     .side-center .lst {
         font-size: 2em;
         padding-left: 0em;
@@ -1171,10 +1248,11 @@
         text-align: left;
         padding-left: 10px;
     }
+
     h3 {
         margin: 0%;
     }
-    
+
     .menu-footer {
         display: none;
     }
@@ -1196,9 +1274,10 @@
         flex-direction: row;
         align-items: center;
         flex-direction: column;
-        height: 38vh;
+        height: auto;
         align-content: center;
     }
+
     .side-center {
         position: relative;
         display: flex;
@@ -1210,6 +1289,7 @@
         width: 100%;
         padding-bottom: 1em;
     }
+
     .side-center .bl-dow {
         padding-left: 36vw;
     }
@@ -1222,14 +1302,17 @@
     .adress {
         font-size: 1.1em;
     }
+
     .BALANCE {
         font-size: 1.1em;
     }
+
     .side-center .lst {
         font-size: 1.6em;
     }
+
     .side-center .bl-dow {
         padding-left: 43vw;
     }
-    
+
 }
