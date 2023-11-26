@@ -3400,6 +3400,8 @@ img {
 	color: #fff;
 	margin-bottom: 0;
 	letter-spacing: normal;
+	width: 16vw;
+	text-align: justify;
 }
 
 .side-center .bl-dow {
@@ -3423,22 +3425,30 @@ img {
 }
 
 .logo2down {
-	width: 82%;
-	position: relative;
-	margin-bottom: 0%;
-	margin-top: 5%;
-	left: -33%;
-	margin-bottom: 5%;
+    width: 97%;
+    min-width: 100px;
+    max-width: 956px;
+    height: auto;
+    position: relative;
+    left: 0%;
+    padding: 1px;
+    margin-bottom: 0%;
+    margin-top: 0%;
+    margin-left: 0%;
 }
 
 .adress {
-	line-height: 1.48em;
-	font-size: 0.87em;
-	font-family: Brinnan-Light;
-	color: #ffffff;
-	margin-left: 1px;
-	margin-right: 0%;
-
+    font-size: 1.35vw;
+    font-family: "Brinnan-Light";
+    color: #ffffff;
+    margin-left: 0px;
+    margin-right: 0%;
+    margin-bottom: 0;
+    width: 100%;
+    height: 1%;
+    text-align: center;
+    position: relative;
+	padding: 3px;
 }
 
 
@@ -3446,8 +3456,9 @@ img {
     left: 31%;
     height: auto;
     width: 48%;
-    max-width: 218px;
+	max-width: 740px;
     position: relative;
+	min-width: 100px;
 }
 
 .side-r {
@@ -3455,7 +3466,7 @@ img {
     flex-direction: column;
     align-content: center;
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
     height: auto;
     width: 26%;
     flex-wrap: nowrap;
@@ -3545,19 +3556,9 @@ img {
     font-size: 0.74em;
     font-family: Brinnan-Light;
     color: #ffffff;
-    /* margin-left: 1px; */
-    /* margin-right: 29%; */
-    /* margin-top: -6%; */
-    /* width: 84%; */
-    /* margin-bottom: 2em; */
+    text-align: center;
 }
 
-.logo2down {
-    position: relative;
-    margin-bottom: 0%;
-    margin-top: -15%;
-    left: -21%;
-}
 
 .logodown {
 	display: block;
@@ -3642,10 +3643,11 @@ img {
     padding: 0.5em;
     background: #0b1b30;
     color: rgba(185, 186, 187, 0.5);
-    height: 14vh;
+    height: auto;
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: stretch;
+	caret-color: transparent;
 }
 
 #footer>* {
@@ -3700,6 +3702,7 @@ img {
 	background-attachment: fixed, fixed;
 	background-position: left, bottom center;
 	background-repeat: repeat, no-repeat;
+	caret-color: transparent;
 
 }
 
@@ -3715,6 +3718,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	align-content: center;
+	caret-color: transparent;
 }
 
 /* Two */
@@ -3727,11 +3731,12 @@ img {
 	background-repeat: repeat, no-repeat;
 	position: relative;
 	height: 100vh;
+	caret-color: transparent;
 }
 
 #tree {
 	background-color: #263239;
-	height: 60vh;
+	height: auto;
 	background-size: cover;
 	background-position: left, bottom center;
 	background-repeat: no-repeat;
@@ -3739,6 +3744,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	caret-color: transparent;
 }
 
 #four {
@@ -3750,11 +3756,12 @@ img {
 	flex-wrap: nowrap;
 	align-content: space-around;
 	justify-content: flex-start;
+	caret-color: transparent;
 }
 
 #five {
 	background-color: #be694b;
-	height: 58vh;
+	height: auto;
 	background-size: cover;
 	background-position: left, bottom center;
 	background-repeat: no-repeat;
@@ -3762,6 +3769,7 @@ img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	caret-color: transparent;
 }
 
 #six {
@@ -3775,6 +3783,7 @@ img {
 	align-items: flex-end;
 	align-content: center;
 	flex-wrap: nowrap;
+	caret-color: transparent;
 }
 
 #seven {
@@ -3785,6 +3794,7 @@ img {
 	display: flex;
 	height: 100vh;
 	background-color: #be694b;
+	caret-color: transparent;
 }
 
 #eight {
@@ -3795,6 +3805,7 @@ img {
 	background-position: center;
 	background-repeat: no-repeat;
 	height: 100vh;
+	caret-color: transparent;
 }
 
 #nine {}
@@ -3813,9 +3824,12 @@ img {
 	align-content: flex-end;
 	justify-content: center;
 	align-items: flex-end;
+	caret-color: transparent;
 }
 
-#eleven {}
+#eleven {
+	caret-color: transparent;
+}
 
 
 
