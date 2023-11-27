@@ -871,7 +871,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 90pt;
+		font-size: 90pt !important;
 	}
 
 }
@@ -882,7 +882,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 64pt;
+		font-size: 64pt !important;
 	}
 
 }
@@ -893,7 +893,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 36pt;
+		font-size: 36pt !important;
 	}
 
 }
@@ -904,7 +904,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 36pt;
+		font-size: 36pt !important;
 	}
 
 }
@@ -915,7 +915,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 34pt;
+		font-size: 34pt !important;
 	}
 
 }
@@ -926,7 +926,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 28pt;
+		font-size: 28pt !important;
 	}
 
 }
@@ -937,7 +937,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 24pt;
+		font-size: 24pt !important;
 	}
 
 }
@@ -948,7 +948,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 20pt;
+		font-size: 20pt !important;
 	}
 
 }
@@ -959,7 +959,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 18pt;
+		font-size: 18pt !important;
 	}
 
 }
@@ -970,7 +970,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 13pt;
+		font-size: 13pt !important;
 	}
 
 }
@@ -981,7 +981,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 13pt;
+		font-size: 13pt !important;
 	}
 
 }
@@ -992,7 +992,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 12pt;
+		font-size: 12pt !important;
 		line-height: 1.5em;
 	}
 
@@ -1010,11 +1010,11 @@ h6 {
 }
 
 h3 {
-	font-family: 'Beliau';
-	font-size: 1.8em;
-	margin-bottom: 1rem;
-	font-weight: lighter;
-	text-align: center;
+	font-family: 'Beliau' !important;
+	font-size: 1.8em !important;
+	margin-bottom: 1rem !important;
+	font-weight: lighter !important;
+	text-align: center !important;
 
 }
 
@@ -2379,7 +2379,7 @@ body.is-touch .poptrox-popup .closer {
 	align-content: center;
 	flex-wrap: wrap;
 	left: 21%;
-	font-family: Beliau;
+	font-family: 'Beliau-Regular';
 	font-size: 1.3em;
 	letter-spacing: 0.1em;
 }
@@ -2443,7 +2443,7 @@ body.is-touch .poptrox-popup .closer {
 	align-content: center;
 	flex-wrap: wrap;
 	left: 21%;
-	font-family: Beliau;
+	font-family: 'Beliau-Regular';
 	font-size: 1.3em;
 	letter-spacing: 0.1em;
 }
@@ -2537,6 +2537,7 @@ body.is-touch .poptrox-popup .closer {
 	box-sizing: border-box;
 	overflow-y: hidden;
 	font-family: 'Brinnan-Light';
+	font-size: 1.5em !important;
 	line-height: 3em;
 }
 
@@ -2560,9 +2561,19 @@ body.is-touch .poptrox-popup .closer {
 	display: block;
 	color: white;
 	text-decoration: none;
-	margin-bottom: 10px;
-	font-size: 18px;
+	margin-bottom: 0;
+	font-size: 0.6em;
 	cursor: pointer;
+}
+
+.location {
+	margin-bottom: 1em;
+	color: #263239;
+	margin-left: 0;
+	text-align: left;
+	font-size: 1em;
+	font-family: 'Beliau-Regular';
+	text-align: center;
 }
 
 #menu a:hover,

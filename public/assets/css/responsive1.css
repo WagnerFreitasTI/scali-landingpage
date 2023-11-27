@@ -1,90 +1,7 @@
-@media (min-width: 9998px) {
-
-    #footer {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-        align-items: flex-end;
-        width: 100%;
-        height: auto;
-        padding: 5px;
-        min-height: 400px;
-    }
-
-    .side-l {
-        display: flex;
-        width: 24vw;
-    }
-
-    .side-center {
-        display: flex;
-        width: 45vw;
-    }
-
-
-
-    .side-center .lst {
-
-        padding-left: 0.2em;
-        color: #fff;
-        margin-bottom: 0;
-        letter-spacing: normal;
-        min-width: 160px;
-        width: 13vw;
-    }
-
-    .logo-fifth {
-        padding-bottom: 7px;
-        left: 0vw;
-        height: auto;
-        width: 48%;
-        max-width: 218px;
-        position: relative;
-        min-width: 123px;
-    }
-
-    .side-r {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
-        padding: 2px;
-    }
-}
-
-@media screen and (min-width: 2090px) and (max-width: 13440px) and (min-height: 1080px) {
-
-    #five {
-        height: auto;
-    }
-
-    #tree {
-        height: auto;
-    }
-
-    #footer {
-        height: auto;
-    }
-
-    .logo-fifth {
-        left: 0vw;
-    }
-
-
-
-    .adress {
-        margin-top: 70px;
-    }
-}
-
-@media (max-width: 3400px) {
+@media (min-width: 9999px) {
     .logo2 {
         height: auto;
-        width: 11vw;
+        width: 8vw;
         min-width: 100px;
         padding: 3px;
         max-width: 474px;
@@ -101,13 +18,13 @@
 
     .logo {
         height: auto;
-        width: 6% !important;
+        width: 4% !important;
         min-width: 100px;
         padding: 19px;
         max-width: 500px;
         position: absolute;
         right: 16vw;
-        top: 0vh;
+        top: 35px;
     }
 
     .button {
@@ -178,6 +95,547 @@
     .text_sec1 {
         margin-top: 40vh;
         margin-left: 16vw;
+        display: flex;
+        width: 10vw;
+    }
+
+    .bags_family {
+        max-width: 100%;
+        height: auto;
+        width: 50vh;
+        padding: 2px;
+    }
+
+    h3 {
+        font-family: 'Beliau';
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 3%;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+        padding: 26px;
+    }
+
+    .side-l {
+        display: flex;
+        width: 24vw;
+        margin-left: 15px;
+    }
+
+    .menu-footer {
+        line-height: 3em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* margin-top: 4%; */
+        font-family: 'Winkell-SuperWide';
+        padding-bottom: 90px;
+    }
+
+    .privacy {
+        line-height: 1.48em;
+    }
+
+    .side-center {
+        display: flex;
+        width: 45vw;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .side-center .bl-dow {
+        width: 62%;
+        margin-bottom: 9px;
+    }
+
+    .BALANCE {
+        font-family: 'Winkell-SuperWide';
+    }
+
+    h6 {
+        margin-bottom: 0rem !important;
+    }
+
+    .side-center .lst {
+        padding-left: 0.2em;
+        color: #fff;
+        margin-bottom: 0;
+        letter-spacing: normal;
+        min-width: 160px;
+    }
+
+    .logo-fifth {
+        padding-bottom: 7px;
+        left: 3vw;
+        height: auto;
+        width: 48%;
+        max-width: 218px;
+        position: relative;
+        min-width: 123px;
+    }
+
+    .side-r {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2px;
+    }
+
+    .container-icons img {
+        height: 4vh;
+        width: auto;
+        padding-right: 0.2em;
+        min-height: 38px;
+    }
+
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 2vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .logo2down {
+        width: 68%;
+        min-width: 100px;
+        max-width: 956px;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding: 1px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+}
+
+
+@media (max-width: 9998px) {
+
+    .logo2 {
+        height: auto;
+        width: 8vw;
+        min-width: 100px;
+        padding: 3px;
+        max-width: 474px;
+        margin-left: 9%;
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+
+    #header1 nav {
+        width: 45vw;
+    }
+
+
+
+    .logo {
+        height: auto;
+        width: 4% !important;
+        min-width: 100px;
+        padding: 19px;
+        max-width: 500px;
+        position: absolute;
+        right: 13vw;
+        top: 0px;
+    }
+
+    .button {
+        position: absolute;
+        top: 0;
+        right: 0vw;
+        max-width: 600px;
+        width: 11vw;
+        height: auto;
+        padding: 18px 16px;
+        margin-right: 5vw;
+        margin-top: 81px;
+    }
+
+
+
+    .box.style2 {
+        width: 66%;
+    }
+
+
+
+    #menu {
+        width: auto;
+    }
+
+    .carousel-inner img {
+        height: 4326px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .s-sec8 {
+        position: absolute;
+        bottom: 5px;
+        right: 948px;
+        max-width: 154px;
+        height: auto;
+        margin: 9px;
+    }
+
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 50%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 26%;
+        top: 12%;
+    }
+
+    .text-logo8 {
+        bottom: 20px;
+    }
+
+    .right-half {
+        padding-top: 16vh;
+    }
+
+
+
+    .blue-text {
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 71%;
+    }
+
+    .text10 {
+        font-weight: bold;
+        width: 38%;
+        color: #0b1b30;
+        font-family: 'Brinnan-Regular';
+        line-height: 1.3em;
+    }
+
+
+
+    .text_sec1 {
+        margin-top: 40vh;
+        margin-left: 16vw;
+        display: flex;
+        width: 24vw;
+    }
+
+    .bags_family {
+        max-width: 100%;
+        height: auto;
+        width: 50vh;
+        padding: 2px;
+    }
+
+    h3 {
+        font-family: 'Beliau';
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 3%;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+        padding: 26px;
+    }
+
+    .side-l {
+        display: flex;
+        width: 24vw;
+        margin-left: 15px;
+    }
+
+    .menu-footer {
+        line-height: 3em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* margin-top: 4%; */
+        font-family: 'Winkell-SuperWide';
+        padding-bottom: 90px;
+    }
+
+    .privacy {
+        line-height: 1.48em;
+    }
+
+    .side-center {
+        display: flex;
+        width: 45vw;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .side-center .bl-dow {
+        width: 62%;
+        margin-bottom: 9px;
+    }
+
+    .BALANCE {
+        font-family: 'Winkell-SuperWide';
+    }
+
+    h6 {
+        margin-bottom: 0rem !important;
+    }
+
+    .side-center .lst {
+        padding-left: 0.2em;
+        color: #fff;
+        margin-bottom: 0;
+        letter-spacing: normal;
+        min-width: 160px;
+    }
+
+    .logo-fifth {
+        padding-bottom: 36px;
+        left: 3vw;
+        height: auto;
+        width: 48%;
+        max-width: 797px;
+        position: relative;
+        min-width: 123px;
+    }
+
+    .side-r {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2px;
+    }
+
+    .container-icons img {
+        height: 8vh;
+        width: auto;
+        padding-right: 0.2em;
+        min-height: 38px;
+    }
+
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 2vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .logo2down {
+        width: 68%;
+        min-width: 100px;
+        max-width: 956px;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding: 1px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+}
+
+@media (max-width: 6401px) {
+    .logo {
+        height: auto;
+        width: 4% !important;
+        min-width: 100px;
+        padding: 19px;
+        max-width: 500px;
+        position: absolute;
+        right: 15vw;
+        top: 26px;
+    }
+
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 50%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 24%;
+        top: 10%;
+    }
+}
+
+@media (max-width: 5400px) {
+
+    .logo2 {
+        height: auto;
+        width: 8vw;
+        min-width: 100px;
+        padding: 3px;
+        max-width: 474px;
+        margin-left: 9%;
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+
+    #header1 nav {
+        width: 45vw;
+    }
+
+
+
+    .logo {
+        height: auto;
+        width: 4% !important;
+        min-width: 100px;
+        padding: 19px;
+        max-width: 500px;
+        position: absolute;
+        right: 16vw;
+        top: 13px;
+    }
+
+    .button {
+        position: absolute;
+        top: 0;
+        right: 0vw;
+        max-width: 600px;
+        width: 11vw;
+        height: auto;
+        padding: 18px 16px;
+        margin-right: 5vw;
+        margin-top: 62px;
+    }
+
+
+
+    .box.style2 {
+        width: 66%;
+    }
+
+
+
+    #menu {
+        width: auto;
+    }
+
+    .carousel-inner img {
+        height: 3390px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .s-sec8 {
+        position: absolute;
+        bottom: 17px;
+        right: 571px;
+        max-width: 107px;
+        height: auto;
+        margin: 9px;
+    }
+
+    .text-logo8 {
+        bottom: 20px;
+    }
+
+    .right-half {
+        padding-top: 16vh;
+    }
+
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 50%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 24%;
+        top: 10%;
+    }
+
+
+
+    .blue-text {
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 71%;
+    }
+
+    .text10 {
+        font-weight: bold;
+        width: 38%;
+        color: #0b1b30;
+        font-family: 'Brinnan-Regular';
+        line-height: 1.3em;
+    }
+
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 50%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 21%;
+        top: 12%;
+    }
+
+
+    .text_sec1 {
+        margin-top: 40vh;
+        margin-left: 16vw;
+        display: flex;
+        width: 16vw;
+    }
+
+    .bags_family {
+        max-width: 100%;
+        height: auto;
+        width: 50vh;
+        padding: 2px;
     }
 
     h3 {
@@ -305,6 +763,531 @@
 
 }
 
+@media (max-width: 5121px) {
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 50%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 21%;
+        top: 5%;
+    }
+}
+
+@media (max-width: 4097px) {
+    .mega-text {
+        line-height: 1.3em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 70%;
+        font-size: 1.2em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 16%;
+        top: 3%;
+    }
+}
+
+
+@media (max-width: 4400px) {
+
+    .logo2 {
+        height: auto;
+        width: 8vw;
+        min-width: 100px;
+        padding: 3px;
+        max-width: 474px;
+        margin-left: 9%;
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+
+    #header1 nav {
+        width: 45vw;
+    }
+
+
+
+    .logo {
+        height: auto;
+        width: 4% !important;
+        min-width: 100px;
+        padding: 19px;
+        max-width: 500px;
+        position: absolute;
+        right: 16vw;
+        top: 6px;
+    }
+
+    .button {
+        position: absolute;
+        top: 0;
+        right: 0;
+        max-width: 600px;
+        width: 11vw;
+        height: auto;
+        padding: 18px 16px;
+        margin-right: 5vw;
+        margin-top: 28px;
+    }
+
+
+
+    .box.style2 {
+        width: 66%;
+    }
+
+
+
+    #menu {
+        width: auto;
+    }
+
+    .carousel-inner img {
+        height: 2861px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .s-sec8 {
+        position: absolute;
+        bottom: -9px;
+        right: 544px;
+        max-width: 142px;
+        height: auto;
+        margin: 9px;
+    }
+
+    .text-logo8 {
+        bottom: 20px;
+    }
+
+    .right-half {
+        padding-top: 16vh;
+    }
+
+
+
+    .blue-text {
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 71%;
+    }
+
+    .text10 {
+        font-weight: bold;
+        width: 38%;
+        color: #0b1b30;
+        font-family: 'Brinnan-Regular';
+        line-height: 1.3em;
+    }
+
+
+
+    .text_sec1 {
+        margin-top: 40vh;
+        margin-left: 16vw;
+        display: flex;
+        width: 20vw;
+    }
+
+    .bags_family {
+        max-width: 100%;
+        height: auto;
+        width: 50vh;
+        padding: 2px;
+    }
+
+    h3 {
+        font-family: 'Beliau';
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 3%;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+        padding: 26px;
+    }
+
+    .side-l {
+        display: flex;
+        width: 24vw;
+        margin-left: 15px;
+    }
+
+    .menu-footer {
+        line-height: 3em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* margin-top: 4%; */
+        font-family: 'Winkell-SuperWide';
+        padding-bottom: 90px;
+    }
+
+    .privacy {
+        line-height: 1.48em;
+    }
+
+    .side-center {
+        display: flex;
+        width: 45vw;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .side-center .bl-dow {
+        width: 62%;
+        margin-bottom: 9px;
+    }
+
+    .BALANCE {
+        font-family: 'Winkell-SuperWide';
+    }
+
+    h6 {
+        margin-bottom: 0rem !important;
+    }
+
+    .side-center .lst {
+        padding-left: 0.2em;
+        color: #fff;
+        margin-bottom: 0;
+        letter-spacing: normal;
+        min-width: 160px;
+    }
+
+    .logo-fifth {
+        padding-bottom: 7px;
+        left: 3vw;
+        height: auto;
+        width: 48%;
+        max-width: 218px;
+        position: relative;
+        min-width: 123px;
+    }
+
+    .side-r {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2px;
+    }
+
+    .container-icons img {
+        height: 4vh;
+        width: auto;
+        padding-right: 0.2em;
+        min-height: 38px;
+    }
+
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 2vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .logo2down {
+        width: 68%;
+        min-width: 100px;
+        max-width: 956px;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding: 1px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+}
+
+@media screen and (min-width: 2090px) and (max-width: 13440px) and (min-height: 1080px) {
+
+    #five {
+        height: auto;
+    }
+
+    #tree {
+        height: auto;
+    }
+
+    #footer {
+        height: auto;
+    }
+
+
+
+
+
+    .adress {
+        margin-top: 70px;
+    }
+}
+
+@media (max-width: 3400px) {
+    .logo2 {
+        height: auto;
+        width: 8vw;
+        min-width: 100px;
+        padding: 3px;
+        max-width: 474px;
+        margin-left: 9%;
+        margin-top: 11%;
+        margin-bottom: 10%;
+    }
+
+    #header1 nav {
+        width: 45vw;
+    }
+
+
+
+    .logo {
+        height: auto;
+        width: 5% !important;
+        min-width: 100px;
+        padding: 19px;
+        max-width: 500px;
+        position: absolute;
+        right: 16vw;
+        top: 6px;
+    }
+
+    .button {
+        position: absolute;
+        top: 11px;
+        right: 0vw;
+        max-width: 600px;
+        width: 11vw;
+        height: auto;
+        padding: 18px 16px;
+        margin-right: 5vw;
+        margin-top: 25px;
+    }
+
+
+
+    .box.style2 {
+        width: 66%;
+    }
+
+
+
+    #menu {
+        width: auto;
+    }
+
+    .carousel-inner img {
+        height: 2226px;
+        width: 400px;
+        object-fit: cover;
+    }
+
+    .s-sec8 {
+        position: absolute;
+        bottom: 0px;
+        right: 384px;
+        max-width: 75px;
+        height: auto;
+        margin: 9px;
+    }
+
+    .text-logo8 {
+        bottom: 20px;
+    }
+
+    .right-half {
+        padding-top: 16vh;
+    }
+
+
+
+    .blue-text {
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 71%;
+    }
+
+    .text10 {
+        font-weight: bold;
+        width: 42%;
+        color: #0b1b30;
+        font-family: 'Brinnan-Regular';
+        line-height: 1.3em;
+    }
+
+
+
+    .text_sec1 {
+        margin-top: 40vh;
+        margin-left: 16vw;
+    }
+
+    h3 {
+        font-family: 'Beliau';
+        margin-bottom: 1rem;
+        font-weight: lighter;
+        text-align: center;
+        margin: 3%;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: flex-end;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 100%;
+        height: auto;
+        padding: 26px;
+    }
+
+    .side-l {
+        display: flex;
+        width: 24vw;
+        margin-left: 15px;
+    }
+
+    .menu-footer {
+        line-height: 3em;
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        justify-content: flex-start;
+        align-items: flex-start;
+        /* margin-top: 4%; */
+        font-family: 'Winkell-SuperWide';
+        padding-bottom: 90px;
+    }
+
+    .privacy {
+        line-height: 1.48em;
+    }
+
+    .side-center {
+        display: flex;
+        width: 45vw;
+        align-items: flex-end;
+        justify-content: space-between;
+    }
+
+    .side-center .bl-dow {
+        width: 62%;
+        margin-bottom: 9px;
+    }
+
+    .BALANCE {
+        font-family: 'Winkell-SuperWide';
+    }
+
+    h6 {
+        margin-bottom: 0rem !important;
+    }
+
+    .side-center .lst {
+        padding-left: 0.2em;
+        color: #fff;
+        margin-bottom: 0;
+        letter-spacing: normal;
+        min-width: 160px;
+    }
+
+    .logo-fifth {
+        padding-bottom: 7px;
+        left: 3vw;
+        height: auto;
+        width: 48%;
+        max-width: 218px;
+        position: relative;
+        min-width: 123px;
+    }
+
+    .mega-text {
+        line-height: 1.5em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 56%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 20%;
+        top: 10%;
+    }
+
+    .side-r {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2px;
+    }
+
+    .container-icons img {
+        height: 4vh;
+        width: auto;
+        padding-right: 0.2em;
+        min-height: 38px;
+    }
+
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 2vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: left;
+        line-height: normal;
+    }
+
+    .logo2down {
+        width: 68%;
+        min-width: 100px;
+        max-width: 956px;
+        height: auto;
+        position: relative;
+        left: 0%;
+        padding: 1px;
+        margin-bottom: 0%;
+        margin-top: 0%;
+        margin-left: 0%;
+    }
+
+}
+
 @media (max-width: 2400px) {
     .logo2 {
         height: auto;
@@ -335,16 +1318,15 @@
 
     .button {
         position: absolute;
-        top: 3vh;
+        top: 0;
         right: 0vw;
         max-width: 600px;
         width: 15vw;
         height: auto;
         padding: 18px 16px;
         margin-right: 5vw;
-        margin-top: 15px;
+        margin-top: 35px;
     }
-
 
 
 
@@ -393,10 +1375,9 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 48%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
-
         line-height: 1.3em;
     }
 
@@ -540,7 +1521,7 @@
 @media (max-width: 2089px) {
     .logo2 {
         height: auto;
-        width: 14vw;
+        width: 11vw;
         min-width: 100px;
         padding: 3px;
         max-width: 474px;
@@ -556,7 +1537,7 @@
 
     .logo {
         height: auto;
-        width: 8% !important;
+        width: 7% !important;
         min-width: 100px;
         padding: 19px;
         max-width: 500px;
@@ -574,7 +1555,7 @@
         height: auto;
         padding: 18px 16px;
         margin-right: 5vw;
-        margin-top: 15px;
+        margin-top: -7px;
     }
 
 
@@ -735,7 +1716,7 @@
 @media (max-width: 1680px) {
     .logo2 {
         height: auto;
-        width: 1vw;
+        width: 9vw;
         min-width: 100px;
         padding: 3px;
         max-width: 474px;
@@ -752,27 +1733,26 @@
 
     .logo {
         height: auto;
-        width: 8% !important;
+        width: 7% !important;
         min-width: 100px;
-        padding: 19px;
+        padding: 15px;
         max-width: 500px;
         position: absolute;
-        right: 19vw;
-        top: 2vh;
+        right: 18vw;
+        top: -23px;
     }
 
     .button {
         position: absolute;
-        top: 3vh;
+        top: 0vh;
         right: 0vw;
         max-width: 600px;
-        width: 15vw;
+        width: 13vw;
         height: auto;
-        padding: 18px 16px;
+        padding: 6px 2px;
         margin-right: 5vw;
         margin-top: 15px;
     }
-
 
     .box.style2 {
         width: 66%;
@@ -1459,11 +2439,16 @@
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
-        align-content: center;
-        justify-content: space-between;
-        align-items: center;
+        align-content: flex-start;
+        justify-content: center;
+        align-items: flex-start;
         padding: 2px;
         width: 43%;
+    }
+
+    .side-center .bl-dow {
+        width: 73%;
+        margin-bottom: 9px;
     }
 
     .adress {
@@ -1475,7 +2460,7 @@
         width: 100%;
         position: relative;
         padding: 3px;
-        text-align: center;
+        text-align: left;
     }
 
     .logodown {
@@ -1601,6 +2586,7 @@
     .text_sec1 {
         margin-top: 39vh;
         margin-left: 0vw;
+
     }
 
     .split-section {
@@ -1609,6 +2595,28 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
+    }
+
+    .mega-text {
+        line-height: 1.2em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 82%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 10%;
+        top: 3%;
+    }
+
+    .s-sec8 {
+        position: absolute;
+        bottom: 0px;
+        right: 27vw;
+        max-width: 75px;
+        height: auto;
+        margin: 9px;
     }
 
     .right-half {
@@ -2098,7 +3106,16 @@
     }
 
     .adress {
-        font-size: 1.35em;
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 14vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: center;
+        margin-top: 34px;
     }
 
     .side-center .lst {
@@ -2697,12 +3714,12 @@
 @media (max-width: 460px) {
     .button {
         position: absolute;
-        top: 1vw;
-        right: 1vw;
+        top: 0vw;
+        right: -2vw;
         max-width: 600px;
-        width: 23%;
+        width: 25%;
         height: auto;
-        padding: 9px 20px;
+        padding: 5px 0px;
         margin-right: 5vw;
         margin-top: 19px;
     }
@@ -2731,7 +3748,7 @@
 
     .s-sec8 {
 
-        right: 40%;
+        right: 49%;
     }
 
 
@@ -2745,6 +3762,14 @@
         align-content: center;
         caret-color: transparent;
 
+    }
+
+    #content4 img {
+        padding-bottom: 6px;
+    }
+
+    .amenities {
+        max-width: 53vw;
     }
 
 
@@ -2775,12 +3800,12 @@
 
     .side-center .bl-dow {
         display: flex;
-        width: 70%;
+        width: 86%;
         flex-direction: row;
         flex-wrap: nowrap;
         align-content: flex-end;
         position: relative;
-        padding-left: 8vw;
+        padding-left: 0;
         align-items: flex-end;
         justify-content: space-between;
     }
@@ -2798,6 +3823,49 @@
         margin-left: 0%;
     }
 
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 10vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: center;
+    }
+
+
+}
+
+@media (max-width: 431px) {
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 23vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: center;
+    }
+
+}
+
+
+@media (max-width: 391px) {
+    .adress {
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 17vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: center;
+    }
 
 }
 
@@ -2859,15 +3927,15 @@
     }
 
     .adress {
-        font-size: 1.1em;
-    }
-
-    .BALANCE {
-        font-size: 1.1em;
-    }
-
-    .side-center .lst {
-        font-size: 1.6em;
+        font-family: 'Brinnan-Light';
+        color: #ffffff;
+        margin-left: 0px;
+        margin-right: 0%;
+        margin-bottom: 24vh;
+        width: 100%;
+        position: relative;
+        padding: 3px;
+        text-align: center;
     }
 
 }
