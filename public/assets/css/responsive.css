@@ -213,21 +213,25 @@
         width: 100%;
         height: auto;
         padding: 5px;
+
     }
 
     .side-l {
         display: flex;
-        width: 24vw;
+        width: 25vw;
+        padding-left: 10px;
     }
 
     .side-center {
         display: flex;
-        width: 45vw;
+        width: 36vw;
+        align-items: flex-end;
+        padding-bottom: 8px;
     }
 
     .BALANCE {
 
-        font-size: 1.8em;
+        font-size: 1.4em;
     }
 
     .side-center .lst {
@@ -240,8 +244,8 @@
     }
 
     .logo-fifth {
-        padding-bottom: 14px;
-        left: 10vw;
+        padding-bottom: 3px;
+        left: 6vw;
         height: auto;
         width: 48%;
         max-width: 218px;
@@ -1310,7 +1314,7 @@
     }
 
     .adress {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .side-center .lst {
@@ -1386,13 +1390,14 @@
         color: #ffffff;
         margin-left: 0px;
         margin-right: -80%;
-        margin-bottom: 1vh;
+        margin-bottom: 0;
         width: 100%;
         height: 1%;
         text-align: center;
         position: relative;
         padding: 3px;
-        margin-top: 14px;
+        margin-top: 10px;
+        line-height: normal;
     }
 
 
