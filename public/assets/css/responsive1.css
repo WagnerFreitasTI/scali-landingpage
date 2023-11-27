@@ -84,7 +84,7 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 42%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
@@ -331,7 +331,7 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 42%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
@@ -604,7 +604,7 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 42%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
@@ -881,7 +881,7 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 42%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
@@ -1543,7 +1543,7 @@
         max-width: 500px;
         position: absolute;
         right: 19vw;
-        top: 1vh;
+        top: -8px;
     }
 
     .button {
@@ -1602,12 +1602,11 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 52%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
     }
-
 
 
 
@@ -1739,7 +1738,7 @@
         max-width: 500px;
         position: absolute;
         right: 18vw;
-        top: -23px;
+        top: -13px;
     }
 
     .button {
@@ -1772,7 +1771,7 @@
     .s-sec8 {
         position: absolute;
         bottom: 0px;
-        right: 12%;
+        right: 19%;
         max-width: 75px;
         height: auto;
         margin: 9px;
@@ -1795,10 +1794,23 @@
 
     .text10 {
         font-weight: bold;
-        width: 38%;
+        width: 55%;
         color: #0b1b30;
         font-family: 'Brinnan-Regular';
         line-height: 1.3em;
+    }
+
+    .mega-text {
+        line-height: 1.3em;
+        color: #0b1b30;
+        font-family: 'Brinnan-light';
+        width: 76%;
+        font-size: 0.80em;
+        font-weight: bold;
+        padding: 10px;
+        position: relative;
+        left: 14%;
+        top: 3%;
     }
 
 
@@ -1895,7 +1907,7 @@
         color: #ffffff;
         margin-left: 0px;
         margin-right: 0%;
-        margin-bottom: 4vh;
+        margin-bottom: 21vh;
         width: 100%;
         position: relative;
         padding: 3px;
@@ -1908,7 +1920,7 @@
 @media (max-width: 1436px) {
     .logo2 {
         height: auto;
-        width: 17vw;
+        width: 14vw;
         min-width: 100px;
         padding: 3px;
         max-width: 474px;
@@ -1985,6 +1997,8 @@
     .text_sec1 {
         margin-top: 40vh;
         margin-left: 16vw;
+        display: flex;
+        width: 31vw;
     }
 
     h3 {
@@ -2085,7 +2099,7 @@
 @media (max-width: 1319px) {
     .logo2 {
         height: auto;
-        width: 17vw;
+        width: 13vw;
         min-width: 100px;
         padding: 3px;
         max-width: 474px;
@@ -2106,7 +2120,7 @@
         max-width: 500px;
         position: absolute;
         right: 21vw;
-        top: 0vh;
+        top: -7px;
     }
 
     .button {
@@ -2294,7 +2308,7 @@
         max-width: 500px;
         position: absolute;
         right: 25vw;
-        top: 0vh;
+        top: -8px;
     }
 
     .button {
@@ -2477,7 +2491,7 @@
         max-width: 500px;
         position: absolute;
         right: 25vw;
-        top: -1vh;
+        top: -8px;
     }
 
     .button {
