@@ -2538,7 +2538,7 @@ body.is-touch .poptrox-popup .closer {
 	overflow-y: hidden;
 	font-family: 'Brinnan-Light';
 	font-size: 1.5em !important;
-	line-height: 3em;
+	line-height: 1.5em !important;
 }
 
 #content4 {
@@ -2785,6 +2785,8 @@ body {
 }
 
 #check-modal {}
+
+
 
 .close-btn-thanx {
 	cursor: pointer;
