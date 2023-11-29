@@ -396,9 +396,7 @@ textarea {
 	margin-left: 10vw;
 }
 
-.whiteSpace {
-	white-space: nowrap;
-}
+
 
 /* Basic */
 
@@ -3804,7 +3802,7 @@ p.adress {
 /* Intro */
 
 #intro {
-	background: url("../../images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg"), url("../../images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg");
+	background: url("../../images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg");
 	background-size: cover;
 	background-attachment: fixed, fixed;
 	background-position: left, bottom center;
