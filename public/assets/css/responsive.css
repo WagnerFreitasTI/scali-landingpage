@@ -217,6 +217,10 @@
         line-height: normal;
     }
 
+    .whiteSpace {
+        white-space: wrap;
+    }
+
 
     .quiet3 {
         line-height: 1.1em;

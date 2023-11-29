@@ -396,6 +396,10 @@ textarea {
 	margin-left: 10vw;
 }
 
+.whiteSpace {
+	white-space: nowrap;
+}
+
 /* Basic */
 
 @-ms-viewport {
@@ -2751,11 +2755,19 @@ body {
 
 #check-modal {}
 
+
+
 .textBelowSummit {
 	line-height: normal;
 	text-align: left;
-	padding: 20px;
 	font-size: 0.75em !important;
+	width: auto;
+	padding: 12px;
+	position: relative;
+	right: 0vw;
+	top: 2vh;
+	margin-right: 1vw;
+	margin-left: 1vw;
 }
 
 .close-btn-thanx {
@@ -2924,12 +2936,13 @@ input[type="checkbox"]:checked {
 .form-button {
 	background-color: #848c70 !important;
 	color: #FFF !important;
-	padding: 6px 33px !important;
+	padding: 6px 22px !important;
 	font-size: 0.75em !important;
 	letter-spacing: 0.18em !important;
 	border: none !important;
-	width: 14em !important;
+	width: 13em !important;
 	height: 3em !important;
+	margin-top: 4vh;
 }
 
 .form-button:hover {
