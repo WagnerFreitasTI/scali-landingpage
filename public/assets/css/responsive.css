@@ -1,3 +1,21 @@
+@media (min-width: 9999px) {
+    .logo-fifth {
+        width: 6vw;
+    }
+
+    .disclaimer {
+        width: 93vw;
+    }
+
+    .side-r {
+        margin-right: 6vw;
+    }
+
+    .whiteSpace {
+        white-space: nowrap;
+    }
+}
+
 @media (max-width: 9998px) {
     .logo-fifth {
         width: 6vw;
@@ -10,12 +28,20 @@
     .side-r {
         margin-right: 6vw;
     }
+
+    .whiteSpace {
+        white-space: nowrap;
+    }
 }
 
 @media(max-width:5140px) {
     .side-r {
         width: 26vw;
         margin-right: 4vw;
+    }
+
+    .whiteSpace {
+        white-space: nowrap;
     }
 }
 
@@ -24,6 +50,10 @@
     .side-r {
         width: 26vw;
         margin-right: 4vw;
+    }
+
+    .whiteSpace {
+        white-space: nowrap;
     }
 }
 
@@ -44,6 +74,10 @@
     .disclaimer {
         width: 93vw;
     }
+
+    .whiteSpace {
+        white-space: nowrap;
+    }
 }
 
 
@@ -51,6 +85,10 @@
     .side-r {
         width: 29vw;
         margin-right: 2vw;
+    }
+
+    .whiteSpace {
+        white-space: nowrap;
     }
 }
 
@@ -68,6 +106,10 @@
     .disclaimer {
         width: 93vw;
     }
+
+    .whiteSpace {
+        white-space: nowrap;
+    }
 }
 
 @media (max-width: 1436px) {
@@ -83,6 +125,10 @@
         font-weight: lighter;
         text-align: center;
         margin: 3%;
+    }
+
+    .whiteSpace {
+        white-space: nowrap;
     }
 }
 
@@ -124,6 +170,11 @@
         align-items: flex-start;
     }
 
+    .whiteSpace {
+        white-space: wrap;
+        width: 33vw;
+    }
+
 
 }
 
@@ -156,6 +207,11 @@
     }
 
     .side-r {
+        width: 37vw;
+    }
+
+    .whiteSpace {
+        white-space: wrap;
         width: 37vw;
     }
 
@@ -209,7 +265,7 @@
 
     .text-sec3 {
         color: white;
-        width: 70vw;
+        width: 54vw;
         height: auto;
         display: flex;
         flex-direction: column;
@@ -219,6 +275,7 @@
 
     .whiteSpace {
         white-space: wrap;
+        width: 47vw;
     }
 
 
@@ -646,6 +703,11 @@
         flex-direction: column;
         align-items: center;
         line-height: normal;
+    }
+
+    .whiteSpace {
+        white-space: wrap;
+        width: 48vw;
     }
 
 
@@ -1081,6 +1143,11 @@
         text-align: center;
         margin-bottom: 10%;
         margin-top: 2%;
+    }
+
+    .whiteSpace {
+        white-space: wrap;
+        width: 56vw;
     }
 
     .main.style1 h2 {
