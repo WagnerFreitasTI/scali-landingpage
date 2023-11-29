@@ -3549,7 +3549,7 @@ img {
 .logo-fifth {
 	left: 0%;
 	height: auto;
-	width: 94%;
+	width: 7vw;
 	max-width: 740px;
 	position: relative;
 	min-width: 30px;
@@ -3757,7 +3757,7 @@ img {
 	caret-color: transparent;
 	width: 100%;
 	height: auto;
-	padding: 8px;
+	padding: 3vh;
 }
 
 #footer>* {
@@ -3781,27 +3781,7 @@ img {
 	font-size: 0.9em;
 }
 
-@media screen and (max-width: 1000px) {
 
-	#footer {
-		-moz-flex-direction: column;
-		-webkit-flex-direction: column;
-		-ms-flex-direction: column;
-		flex-direction: column;
-		-moz-justify-content: center;
-		-webkit-justify-content: center;
-		-ms-justify-content: center;
-		justify-content: center;
-		line-height: 1.5em;
-		text-align: center;
-		padding: 2em 1em 2em 1em;
-	}
-
-	#footer>* {
-		margin: 0 0 1em 0;
-	}
-
-}
 
 
 /* Intro */
