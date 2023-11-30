@@ -29,8 +29,8 @@ html {
 
 @font-face {
 	font-family: 'Beliau-Regular';
-	src: url('../fonts/Beliau-Regular.otf') format('opentype'),
-		url('../fonts//Beliau-Regular.ttf') format('truetype');
+	src: url('../fonts/Beliau.otf') format('opentype'),
+		url('../fonts//Beliau.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1012,7 +1012,7 @@ h6 {
 }
 
 h3 {
-	font-family: 'Beliau-Regular';
+	font-family: 'Beliau';
 	font-size: 1.8em;
 	margin-bottom: 1rem;
 	font-weight: lighter;
@@ -2363,7 +2363,7 @@ body.is-touch .poptrox-popup .closer {
 	align-content: center;
 	flex-wrap: wrap;
 	left: 21%;
-	font-family: 'Beliau-Regular';
+	font-family: Beliau;
 	font-size: 1.3em;
 	letter-spacing: 0.1em;
 }
@@ -2387,6 +2387,72 @@ body.is-touch .poptrox-popup .closer {
 	padding: 0 0 0 0;
 	outline: 0;
 }
+
+#header1 {
+	position: absolute;
+	border-bottom: solid white 1px;
+	z-index: 10000;
+	left: 0;
+	top: 0;
+	width: 100%;
+	background-color: #8e412257;
+	transition: background-color 0.5s ease;
+	height: auto;
+	box-shadow: 0 0 0.15em 0 rgba(0, 0, 0, 0.1);
+	justify-content: space-between;
+	align-items: center;
+}
+
+#header1 h1 {
+	position: absolute;
+	left: 1em;
+	top: 0;
+	height: 3em;
+	line-height: 3em;
+	cursor: default;
+}
+
+#header1 h1 a {
+	font-size: 1.25em;
+}
+
+#header1 nav {
+	position: absolute;
+	color: transparent !important;
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 30%;
+	align-content: center;
+	flex-wrap: wrap;
+	left: 21%;
+	font-family: Beliau;
+	font-size: 1.3em;
+	letter-spacing: 0.1em;
+}
+
+#header1 nav ul {
+	margin: 0;
+}
+
+#header1 nav ul li {
+	display: inline-block;
+	margin-left: 0.5em;
+	font-size: 0.76em;
+	padding-right: 25px;
+}
+
+
+#header1 nav ul li a {
+	display: block;
+	color: white;
+	text-decoration: none;
+	padding: 0 0 0 0;
+	outline: 0;
+}
+
+
 
 .register {
 	background-color: transparent;
@@ -2413,7 +2479,7 @@ body.is-touch .poptrox-popup .closer {
 }
 
 .text-logo {
-	font-family: 'Beliau-Regular';
+	font-family: 'Beliau';
 	font-size: 1em;
 	margin-left: 10px;
 	position: absolute;
@@ -3162,7 +3228,7 @@ body.is-touch .main {
 }
 
 .text-logo8 {
-	font-family: 'Beliau-Regular';
+	font-family: 'Beliau';
 	font-size: 1em;
 	margin-right: 10px;
 	position: absolute;
@@ -3343,7 +3409,7 @@ img {
 
 /* Estilos para o texto e o botão */
 .text {
-	font-family: 'Beliau-Regular';
+	font-family: 'Beliau';
 	font-size: 1.4em;
 	font-style: normal;
 	padding: 1em;
