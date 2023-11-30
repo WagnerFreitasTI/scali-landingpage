@@ -21,7 +21,7 @@
                 <img src="images/Scale1.png" alt="Logo Scale" class="logo-img" />
             </a>
 
-            <nav class="nav-wrapper">
+            <nav>
                 <a href="#four">PROJECTS</a>
                 <a href="#four">NEIGHBOURHOOD</a>
             </nav>
@@ -57,9 +57,6 @@
                         </p>
                     </div>
                 </header>
-                <footer>
-
-                </footer>
             </div>
             <a href="#one" class="arrowdow button style2 down ">More</a>
         </section>
@@ -206,10 +203,7 @@
         </section>
 
         <section id="nine" class="main  right dark fullscreen split-section ">
-
-
             <div class="left-half">
-
             </div>
             <div class="right-half section-nap-scroll">
                 <h4>REGISTER TODAY</h4>
@@ -224,18 +218,18 @@
 
                     <div class="par-form-field">
                         <label for="lname">Last name*</label>
-                    <input type="text" id="lname" name="lname" class="text-input" required>
-                </div>
+                        <input type="text" id="lname" name="lname" class="text-input" required>
+                    </div>
 
                     <div class="par-form-field">
                         <label for="email">E-mail*</label>
-                    <input type="email" id="email" name="email" class="text-input" required>
-                </div>
+                        <input type="email" id="email" name="email" class="text-input" required>
+                    </div>
 
                     <div class="par-form-field">
                         <label for="phone">Phone*</label>
-                    <input type="tel" id="phone" name="phone" class="text-input" required>
-                </div>
+                        <input type="tel" id="phone" name="phone" class="text-input" required>
+                    </div>
 
                     <label for="city">City of residence*</label>
                     <input type="text" id="city" name="city" class="text-input" required>
@@ -267,7 +261,8 @@
                     </div>
 
                     <div class="div-flex text-input">
-                        <label for="contact-method" style="padding-right: 1em; font-weight: bold; font-size: 75%; white-space: nowrap;">
+                        <label for="contact-method"
+                            style="padding-right: 1em; font-weight: bold; font-size: 75%; white-space: nowrap;">
                             HOW WOULD YOU LIKE TO BE CONTACTED?</label>
 
                         <input type="checkbox" id="checkbox-phone" name="contact-method" value="Phone">
@@ -326,11 +321,9 @@
 
 							</h3> -->
                         </div>
-
                     </div>
+                </form>
             </div>
-
-            </form>
 
             <div id=" privacy-modal" style="display: none;padding: 2%;width: 44%;top: 44%;left: 25%;">
                 <span id="close-modal" onclick="closePrivacyModal()">&times;</span>
@@ -346,14 +339,10 @@
                         available to you, please <a href="javascript:void(0)">click here</a></p>
                 </div>
             </div>
-
-
         </section>
-
 
         <section id="ten" class="main  right dark section-nap-scroll">
             <div class="alin10">
-
                 <p class="text10">
                     LIFE IS REAL, AND SO
                     ARE SCALE PROJECTS<br>
@@ -377,7 +366,6 @@
                     this all in-house, from conception to completion.
                 </p>
             </div>
-
         </section>
 
         <section id="eleven" class="main  right dark fullscreen section-nap-scroll">
@@ -429,7 +417,7 @@
                     To live your best version, and stand tall.
                     <br>
                     <b>Goodnight, dear dreamer, under moonlight’s soft veil,
-                    May you find your own balance, and always set sail</b>
+                        May you find your own balance, and always set sail</b>
                 </p>
             </div>
         </section>
@@ -444,7 +432,8 @@
                 </div>
                 <p class="privacy">
                     Copyright &copy; 2023 Scale Projects
-                    <a href="javascript:void(0)" style="margin-left: 10px; border-bottom: solid 1px; white-space: nowrap;"
+                    <a href="javascript:void(0)"
+                        style="margin-left: 10px; border-bottom: solid 1px; white-space: nowrap;"
                         onclick="openPrivacyModal2()">Privacy
                         Policy</a>
                 </p>
@@ -501,26 +490,8 @@
                 </div>
             </div>
 
-
             <div class="side-r">
                 <img src="images/logo.png" alt="Logo 1" class="logodown">
-
-
-
-                <div class="container-icons">
-                    <a href="#" target="_blank">
-                        <img src="images/icon_fb.png" alt="IconFB">
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <img src="images/icon_inst.png" alt="IconInsta">
-                    </a>
-
-                    <a href="#" target="_blank">
-                        <img src="images/icon_yt.png" alt="IconYT">
-                    </a>
-                </div>
-
 
                 <p class="adress">
                     Presentation Centre Coming Soon!
@@ -530,10 +501,7 @@
                     homes@scaleliving.ca
                 </p>
                 <a href="#intro"><img src="images/logo2.png" alt="logo2" class="logo2down"></a>
-
-
             </div>
-
         </footer>
 
         <!-- Scripts -->
@@ -550,6 +518,7 @@
 
 <script>
     const formContatoRef = document.getElementById("form-contato")
+
     function onSubmit() {
         event.preventDefault()
 
@@ -568,7 +537,6 @@
             "agreeToConsent": document.getElementById('consentCheckbox').checked,
             "ReCAPTCHA": document.getElementById('g-recaptcha-response').value
         };
-
 
         fetch(formContatoRef.action, {
             method: 'POST',
@@ -595,16 +563,10 @@
     }
 
     function exibirModalSucesso() {
-
         var modal = document.querySelector('.check-modal');
         modal.style.display = 'flex';
     }
-</script>
 
-
-
-
-<script>
     const buttons = document.querySelectorAll('.toggle-button');
     buttons.forEach(button => {
         button.addEventListener('click', function () {
@@ -619,9 +581,7 @@
             }
         });
     });
-</script>
 
-<script>
     function openPrivacyModal() {
         document.getElementById('privacy-modal').style.display = 'block';
     }
@@ -637,12 +597,7 @@
         document.getElementById('privacy-modal2').style.display = 'none';
     }
 
-</script>
-
-<script>
-
     function exibirModalSucesso() {
-
         var modalContent = `
             <h3 style="
                 font-family: 'Brinnan-Light';
@@ -662,7 +617,6 @@
         popup.className = 'popup';
         popup.innerHTML = modalContent;
 
-
         var closeBtn = document.createElement('span');
         closeBtn.className = 'close-btn-thanx';
         closeBtn.innerHTML = '&times;';
@@ -671,19 +625,11 @@
         };
         popup.appendChild(closeBtn);
 
-
         document.body.appendChild(popup);
-
 
         popup.style.display = 'block';
     }
-</script>
 
-
-
-
-
-<script>
     function showImage(element, imageSrc) {
         document.getElementById('overlayImage').src = imageSrc;
 
