@@ -984,7 +984,7 @@ h3 {
 }
 
 .about {
-    font-size: 90%;
+    font-size: 80%;
     font-family: Brinnan-Light;
     color: white;
     line-height: 1.4;
@@ -2655,7 +2655,7 @@ body {
 }
 
 .par-form {
-    font-size: 0.86em;
+    font-size: 75%;
     display: flex;
     flex-direction: column;
     row-gap: 20px;
@@ -2663,7 +2663,7 @@ body {
 
 .par-form label {
     display: block;
-    margin-bottom: -10px;
+    margin-bottom: -12px;
 }
 
 .right-half {
@@ -2731,7 +2731,7 @@ body {
     outline: none !important;
     border-radius: 0 !important;
     font-family: 'Brinnan-Light';
-
+    font-size: 120% !important;
 }
 
 .text-input10 {
@@ -2745,12 +2745,11 @@ body {
 }
 
 .parag3 {
-    font-size: 0.86em;
-    line-height: 1em;
+    font-size: 75%;
+    line-height: 1;
     text-align: justify;
     margin-bottom: 40px;
 }
-
 
 .text10 {
     width: 50%;
@@ -2823,26 +2822,34 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
+    padding-bottom: 12px !important;
+    line-height: 1;
 }
 
+.div-flex input[type="radio"],
 .div-flex input[type="checkbox"] {
     appearance: none !important;
-    margin-bottom: 0.7em;
     -webkit-appearance: none;
     -moz-appearance: none;
     border: 1px solid #ffffff;
     background-color: transparent;
     border-radius: 0;
-    height: 1.2em;
-    width: 1.2em;
-    margin-top: 0.6em;
+    height: 24px;
+    width: 24px;
+    position: relative;
+    margin-right: 3px;
+    top: 3px;
 }
 
+input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     background-color: #ffffff;
     /* Cor de fundo quando o checkbox está marcado */
 }
 
+.div-flex label {
+    font-size: 75%;
+}
 
 .split-section-horizon {
     height: 100vh;
@@ -3075,6 +3082,7 @@ body.is-touch .main {
     top: 64px;
     left: 12%;
     width: 190px;
+    z-index: 10;
 }
 
 .amenities {
