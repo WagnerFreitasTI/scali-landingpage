@@ -2422,10 +2422,14 @@ body.is-touch .poptrox-popup .closer {
 /* <section id="four" */
 
 #menu {
-    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 150px;
+    padding-right: 80px;
     background-color: #a7a68f;
     color: white;
-    padding: 7%;
     box-sizing: border-box;
     overflow-y: hidden;
     font-family: 'Brinnan-Light';
@@ -2454,7 +2458,8 @@ body.is-touch .poptrox-popup .closer {
     color: white;
     text-decoration: none;
     margin-bottom: 0;
-    font-size: 0.6em;
+    font-size: 1rem;
+    white-space: nowrap;
     cursor: pointer;
 }
 
@@ -2463,9 +2468,10 @@ body.is-touch .poptrox-popup .closer {
     color: #263239;
     margin-left: 0;
     text-align: left;
-    font-size: 1em;
+    font-size: 2rem !important;
     font-family: 'Beliau-Regular';
-    text-align: center;
+    text-align: left !important;
+    width: 195px;
 }
 
 #menu a:hover,
