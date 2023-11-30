@@ -92,4 +92,39 @@
         #two .navigation-button span {
             height: 2px;
         }
+
+    .text-sec3 {
+        padding-top: 20px;
+        padding-bottom: 40px;
+    }
+
+    #six {
+        height: auto !important;
+        flex-direction: column;
+        background: #e1cab8;
+        padding-top: 32px;
+    }
+
+        .amenities-logo {
+            position: static;
+            width: 100px
+        }
+
+        .Streetscape_image {
+            height: auto;
+            width: 98%;
+            margin: 0;
+        }
+
+        .amenities {
+            width: 98%;
+            max-width: unset;
+            margin: 40px auto 0;
+            align-items: center;
+            padding-bottom: 40px;
+        }
+
+            .amenities img {
+                width: 80%;
+            }
 }
