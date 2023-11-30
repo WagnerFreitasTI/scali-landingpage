@@ -203,7 +203,7 @@
     #intro {
         background: url(../../images/mobile/SCALI_14_Vignette_B.webp);
         background-size: cover;
-        background-attachment: fixed, fixed;
+        /* background-attachment: fixed, fixed; */
         background-position: left, bottom center;
         background-repeat: repeat, no-repeat;
         caret-color: transparent;

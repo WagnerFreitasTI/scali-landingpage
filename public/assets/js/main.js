@@ -12,7 +12,7 @@
 	$window.on('load', function () {
 		setTimeout(function () {
 			$body.removeClass('is-preload');
-		}, 50);
+		}, 30);
 	});
 
 
