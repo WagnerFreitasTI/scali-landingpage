@@ -30,11 +30,11 @@
 
         #header1 nav {
             margin-left: 16px;
-            column-gap: 16px;
+            column-gap: 12px;
         }
 
             #header1 nav a {
-                font-size: 50%;
+                font-size: 45%;
             }
         
             #header1 .register-wrapper .logo {
@@ -42,13 +42,7 @@
             }
 
             #header1 .register-wrapper button {
-                padding: 8px 13px 6px;
+                padding: 8px 10px 6px;
                 height: auto;
             }
-}
-
-@media screen and (max-width: 400px) {
-    #header1 nav {
-        display: none;
-    }
 }
