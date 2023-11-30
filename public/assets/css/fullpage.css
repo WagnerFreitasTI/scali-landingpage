@@ -229,24 +229,20 @@ h6 {
 
 .title-intro {
     position: relative;
-    font-size: 5em;
+    font-size: 400%;
     font-family: 'Beliau-Regular';
     letter-spacing: 0.01em;
+    line-height: .9;
 }
 
 .text_sec1 {
     display: flex;
-    width: 24vw;
-    min-width: 250px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20%;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 22%;
     position: relative;
     margin-left: 14%;
-    line-height: normal;
+    line-height: 1;
 }
 
 .title {
@@ -987,15 +983,19 @@ h3 {
     align-items: flex-start;
 }
 
-
-
 .about {
-    font-size: 1em;
+    font-size: 90%;
     font-family: Brinnan-Light;
     color: white;
-    line-height: 2em;
+    line-height: 1.4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.about p {
+    width: 100%
+}
 
 /* Estilo para o texto */
 .bottom-left p {
@@ -2315,42 +2315,42 @@ body.is-touch .poptrox-popup .closer {
     box-sizing: border-box;
 }
 
-    #header1 .logo-img {
-        width: 140px;
-    }
+#header1 .logo-img {
+    width: 140px;
+}
 
-    #header1 nav {
-        display: inline-flex;
-        align-items: center;
-        align-content: center;
-        flex-wrap: wrap;
-        font-family: 'Beliau-Regular';
-        column-gap: 32px;
-        margin-left: 60px;
-    }
+#header1 nav {
+    display: inline-flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    font-family: 'Beliau-Regular';
+    column-gap: 32px;
+    margin-left: 60px;
+}
 
-    #header1 nav a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 0 0 0 0;
-        outline: 0;
-        font-size: 75%;
-        letter-spacing: 2px;
-        -webkit-text-stroke: .5px #E1CAB7;
-    }
+#header1 nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 0 0 0 0;
+    outline: 0;
+    font-size: 75%;
+    letter-spacing: 2px;
+    -webkit-text-stroke: .5px #E1CAB7;
+}
 
-    #header1 nav a:hover {
-        text-decoration: underline;
-    }
+#header1 nav a:hover {
+    text-decoration: underline;
+}
 
-    #header1 .register-wrapper {
-        justify-self: end;
-    }
+#header1 .register-wrapper {
+    justify-self: end;
+}
 
-    #header1 .register-wrapper .logo {
-        width: 64px;
-    }
+#header1 .register-wrapper .logo {
+    width: 64px;
+}
 
 .register {
     background-color: transparent;
@@ -2388,25 +2388,35 @@ body.is-touch .poptrox-popup .closer {
 
 .text-sec3 {
     color: white;
-    width: 39%;
+    width: 750px;
     height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 54px;
+    padding-bottom: 70px;
+}
+
+.text-sec3 h3 {
+    letter-spacing: .5px;
+}
+
+.text-sec3 p {
+    width: 90%;
 }
 
 .quiet3 {
-    line-height: 1.1em;
+    margin-top: 20px;
+    line-height: 100%;
+    line-height: 1.4;
     text-align: center;
-    margin-bottom: 10%;
 }
 
 .icon-center {
     height: auto;
     width: 18%;
     position: relative;
-    margin: 0%;
-    padding-top: 64px;
+    margin-bottom: 40px;
 }
 
 /* <section id="four" */
@@ -2521,15 +2531,6 @@ body {
     padding: 3em 3em 3em 5em;
 }
 
-.main.style1 h2 {
-    font-size: 5em;
-    line-height: 1em;
-    margin-bottom: 1vh;
-    margin-left: 0vw;
-    margin-top: 0vh;
-    font-weight: lighter;
-}
-
 .lifestyle {
     font-size: 3.4em;
     font-family: 'AddingtonCF-DemiBoldItalic';
@@ -2544,8 +2545,9 @@ body {
     margin-top: 0vh;
     font-family: 'Brinnan-Light';
     font-weight: bold;
-    font-size: 1.2em;
+    font-size: 100%;
     text-align: left;
+    line-height: 1.2
 }
 
 .coming {
@@ -2648,6 +2650,14 @@ body {
 
 .par-form {
     font-size: 0.86em;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.par-form label {
+    display: block;
+    margin-bottom: -10px;
 }
 
 .right-half {
@@ -2658,6 +2668,11 @@ body {
     font-family: 'Brinnan-Light';
     color: #ffffff;
     padding-right: 3em;
+}
+
+.right-half h4 {
+    font-family: 'Brinnan-Bold';
+    margin-bottom: 40px;
 }
 
 .OK-Check {
@@ -2727,15 +2742,15 @@ body {
     font-size: 0.86em;
     line-height: 1em;
     text-align: justify;
+    margin-bottom: 40px;
 }
 
 
 .text10 {
-    font-weight: bold;
-    width: 38%;
+    width: 50%;
     color: #0b1b30;
     font-family: 'Brinnan-Regular';
-    font-size: 1.2em;
+    font-size: 100%;
     line-height: normal;
     padding: 10px;
     position: relative;
@@ -2747,12 +2762,13 @@ body {
     color: #0b1b30;
     font-family: 'Brinnan-light';
     width: 71%;
-    font-size: 1.1em;
+    font-size: 80%;
     font-weight: lighter;
     position: relative;
-    padding-bottom: 55px;
+    padding-bottom: 80px;
     padding-right: 55px;
-    padding-top: 55px;
+    padding-left: 55px;
+    padding-top: 80px;
 }
 
 .dev-button {
@@ -2772,22 +2788,6 @@ body {
     align-items: center;
     width: 77%;
     align-content: center;
-}
-
-
-
-
-.mega-text {
-    line-height: 1.5em;
-    color: #0b1b30;
-    font-family: 'Brinnan-light';
-    width: 63%;
-    font-size: 0.80em;
-    font-weight: bold;
-    padding: 10px;
-    position: relative;
-    left: 19%;
-    top: 10%;
 }
 
 .tale11 {
@@ -3061,24 +3061,37 @@ body.is-touch .main {
     width: 61%;
     max-width: 100%;
     max-height: 100vh;
+    margin-left: -5%;
+}
+
+.amenities-logo {
+    position: absolute;
+    top: 64px;
+    left: 12%;
+    width: 190px;
 }
 
 .amenities {
     color: #0b1b30;
     display: flex;
     flex-wrap: nowrap;
-    width: 18vw;
+    width: 17vw;
     height: auto;
     max-width: 30vw;
     flex-direction: column;
     position: relative;
-    align-content: center;
-    align-items: center;
+    align-items: start;
     text-align: left;
+    margin-left: 40px;
 }
 
 .textAmenitties {
     padding-left: 20px;
+    text-align: left;
+    line-height: .9;
+    margin-top: 12px;
+    margin-bottom: 40px;
+    margin-left: -5px;
 }
 
 
@@ -3102,7 +3115,7 @@ body.is-touch .main {
 }
 
 .quiet4 {
-    line-height: 1em;
+    line-height: 1.4;
     text-align: center;
     margin-bottom: 0%;
     width: 22vw;
@@ -3111,8 +3124,9 @@ body.is-touch .main {
 .bags_family {
     max-width: 100%;
     height: auto;
-    width: 50%;
+    width: 45%;
     padding: 2px;
+    margin-bottom: 24px;
 }
 
 .button7 {
@@ -3131,7 +3145,8 @@ body.is-touch .main {
 
 .carrosel {
     display: flex;
-    width: auto;
+    width: 100%;
+    padding: 5vw;
 }
 
 .carousel-control-prev-icon,
@@ -3140,43 +3155,45 @@ body.is-touch .main {
 }
 
 /* Define uma altura fixa para o carrossel */
-#myCarousel {
-    height: 300px;
-}
 
 /* Ajusta as imagens para terem dimensões fixas */
+.carousel-inner,
+.carousel-item {
+    height: 100%
+}
+
 .carousel-inner img {
-    height: 400px;
-    width: 400px;
     object-fit: cover;
+    object-position: center center;
+    height: 100%
 }
 
-/* Logo no canto inferior direito */
-
-.s-sec8 {
+.your-life-in-focus {
     position: absolute;
-    bottom: -20px;
-    right: 30%;
-    max-width: 75px;
-    height: auto;
-    margin: 9px;
+    right: 5vw;
+    bottom: 1vw;
+    display: flex;
+    align-items: center;
+    column-gap: 8px;
 }
 
-.text-logo8 {
+.your-life-in-focus img {
+    width: 64px;
+    height: 64px;
+}
+
+.your-life-in-focus div {
     font-family: 'Beliau';
     font-size: 1em;
-    margin-right: 0px;
-    position: absolute;
-    bottom: 10px;
-    right: 35px;
-    color: #a7a68f;
+    color: #263239;
+    letter-spacing: -.8px;
 }
 
-
-
-
-
-
+.your-life-in-focus div span {
+    color: #848c70;
+    font-family: 'Brinnan-Regular';
+    font-size: .9em;
+}
 
 * {
     box-sizing: border-box
@@ -3299,10 +3316,9 @@ img {
 
 
 #myCarousel {
-    height: 100vh;
-    width: 100vw;
-    padding: 1.8vw;
-    max-width: 100%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
 }
 
 .tree_frames {
@@ -3585,11 +3601,11 @@ img {
 }
 
 .privacy {
-    line-height: 1.48em;
-    font-size: 0.74em;
+    font-size: 80%;
     font-family: Brinnan-Light;
     color: #ffffff;
-    text-align: center;
+    text-align: left;
+    white-space: nowrap;
 }
 
 
@@ -3618,9 +3634,26 @@ img {
 .right-section11 {
     flex: 50%;
     background-color: #cbb3a6;
-    border: solid 16px white;
+    border: solid 24px white;
+    display: inline-flex;
+    flex-direction: column;
+    row-gap: 24px;
+    align-items: center;
+    justify-content: center;
+    padding: 40px;
 }
 
+    .right-section11 p {
+        font-size: 60%;
+        max-width: 475px;
+        line-height: 1.6;
+        color: #0b1b30;
+        font-family: 'Brinnan-Regular';
+    }
+
+    .right-section11 p b {
+        font-family: 'Brinnan-Bold';
+    }
 
 @media screen and (max-width: 1920px) {
 
@@ -3674,7 +3707,7 @@ img {
     position: relative;
     margin: 0;
     line-height: 1em;
-    padding: 0.5em;
+    padding: 40px 40px 100px;
     background: #0b1b30;
     color: rgba(185, 186, 187, 0.5);
     height: auto;
@@ -3807,6 +3840,7 @@ img {
 }
 
 #six {
+    position: relative;
     background-color: #e1cab8;
     background-size: cover;
     background-attachment: fixed, fixed;
@@ -3826,7 +3860,7 @@ img {
     background-attachment: fixed, fixed;
     background-position: top left, center center;
     display: flex;
-    height: 100vh;
+    height: 95vh;
     background-color: #be694b;
     caret-color: transparent;
 }
@@ -3902,4 +3936,17 @@ img {
         padding: 1em 1em 2em 1em;
     }
 
+}
+
+.disclaimer {
+    position: absolute;
+    bottom: 16px;
+    left: 0px;
+    padding: 0 40px;
+	line-height: normal;
+	font-size: 0.5em;
+	font-family: Brinnan-Light;
+	color: #cdcdcd;
+	width: 100%;
+	text-align: justify;
 }
