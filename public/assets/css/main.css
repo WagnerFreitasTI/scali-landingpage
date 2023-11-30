@@ -29,8 +29,8 @@ html {
 
 @font-face {
 	font-family: 'Beliau-Regular';
-	src: url('../fonts/Beliau.otf') format('opentype'),
-		url('../fonts//Beliau.ttf') format('truetype');
+	src: url('../fonts/Beliau-Regular.otf') format('opentype'),
+		url('../fonts//Beliau-Regular.ttf') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -1012,7 +1012,7 @@ h6 {
 }
 
 h3 {
-	font-family: 'Beliau';
+	font-family: 'Beliau-Regular';
 	font-size: 1.8em;
 	margin-bottom: 1rem;
 	font-weight: lighter;
@@ -2363,7 +2363,7 @@ body.is-touch .poptrox-popup .closer {
 	align-content: center;
 	flex-wrap: wrap;
 	left: 21%;
-	font-family: Beliau;
+	font-family: 'Beliau-Regular';
 	font-size: 1.3em;
 	letter-spacing: 0.1em;
 }
@@ -2413,7 +2413,7 @@ body.is-touch .poptrox-popup .closer {
 }
 
 .text-logo {
-	font-family: 'Beliau';
+	font-family: 'Beliau-Regular';
 	font-size: 1em;
 	margin-left: 10px;
 	position: absolute;
@@ -3162,7 +3162,7 @@ body.is-touch .main {
 }
 
 .text-logo8 {
-	font-family: 'Beliau';
+	font-family: 'Beliau-Regular';
 	font-size: 1em;
 	margin-right: 10px;
 	position: absolute;
@@ -3343,7 +3343,7 @@ img {
 
 /* Estilos para o texto e o botão */
 .text {
-	font-family: 'Beliau';
+	font-family: 'Beliau-Regular';
 	font-size: 1.4em;
 	font-style: normal;
 	padding: 1em;
