@@ -7,6 +7,7 @@
     <title>Scale</title>
     <link rel="stylesheet" href="assets/css/fullpage.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
     <link rel="icon" type="image/x-icon" sizes="32x32" href="./images/S-favIcon.ico">
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
@@ -82,12 +83,37 @@
                 </div>
         </section>
 
-        <section id="two" class="main mainMobile left dark fullscreen style2 section-nap-scroll">
+        <section id="two">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-1.jpg" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-2.jpg" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-3.jpg" />
+                        </picture>
+                    </div>
+                </div>
 
-            <img src="images/S.png" alt="Imagem S" class="s-sec2">
-            <div class="text-logo">YOUR LIFE <span style="font-family: 'Brinnan-Light';
-			 color: #f6f6f6;">
-                    IN FOCUS. </span>
+                <div class="navigation">
+                    <div class="navigation-button navigation-button-prev swiper-button-prev">
+                        <span></span>
+                    </div>
+                    <div class="navigation-button navigation-button-next swiper-button-next">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -479,7 +505,7 @@
                     </h3>
                 </div>
             </div>
-            
+
             <a href="https://fifthave.ca/"><img src="images/Fifth-Ave.png" alt="FIFTH AVU" class="logo-fifth"></a>
 
             <div class="side-r">
@@ -649,8 +675,16 @@
     }
 </script>
 
-
-
-
-
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper("#two > .swiper", {
+        loop: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".navigation-button-next",
+            prevEl: ".navigation-button-prev",
+        }
+    })
+</script>
 </html>
