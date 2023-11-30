@@ -37,10 +37,6 @@
                 font-size: 50%;
             }
         
-        #header1 .register-wrapper {
-
-        }
-
             #header1 .register-wrapper .logo {
                 display: none;
             }
@@ -49,4 +45,10 @@
                 padding: 8px 13px 6px;
                 height: auto;
             }
+}
+
+@media screen and (max-width: 400px) {
+    #header1 nav {
+        display: none;
+    }
 }
