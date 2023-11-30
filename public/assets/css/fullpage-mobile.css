@@ -1,0 +1,52 @@
+@media screen and (max-width: 960px) {
+
+    html, body {
+        width: 100vw;
+        overflow-x: hidden;
+    }
+
+    .main-content {
+        position: fixed;
+        top: 0;
+        left: 0;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        overflow-x: hidden;
+    }
+
+    #header1 {
+        padding: 16px;
+    }
+
+        #header1 .menu-wrapper {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        #header1 .logo-img {
+            width: 80px;
+        }
+
+        #header1 nav {
+            margin-left: 16px;
+            column-gap: 16px;
+        }
+
+            #header1 nav a {
+                font-size: 50%;
+            }
+        
+        #header1 .register-wrapper {
+
+        }
+
+            #header1 .register-wrapper .logo {
+                display: none;
+            }
+
+            #header1 .register-wrapper button {
+                padding: 8px 13px 6px;
+                height: auto;
+            }
+}
