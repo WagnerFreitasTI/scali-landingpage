@@ -3437,35 +3437,22 @@ img {
     align-content: center;
     justify-content: center;
     align-items: center;
-    height: auto;
-    width: 47%;
-    /* padding-bottom: 1em; */
-    flex-wrap: nowrap;
-
-}
-
-.side-center .balance {
-    color: #96a3b7;
-    font-size: 1.4em;
-    font-weight: lighter;
-    margin-top: 0.35em;
-    font-family: 'AddingtonCF-DemiBoldItalic';
+    column-gap: 72px;
 }
 
 .side-center .lst {
-    font-size: 2em;
+    font-size: 160%;
     padding-left: 0.2em;
     color: #fff;
     margin-bottom: 0;
     letter-spacing: normal;
-    width: 16vw;
     text-align: justify;
     white-space: nowrap;
+    line-height: 1;
 }
 
 .side-center .bl-dow {
     display: flex;
-    width: 70%;
     flex-direction: row;
     align-content: center;
     justify-content: center;
@@ -3487,65 +3474,39 @@ img {
 }
 
 .logo2down {
-    width: 97%;
-    min-width: 100px;
-    max-width: 956px;
+    width: 400px;
     height: auto;
     position: relative;
-    left: 0%;
     padding: 1px;
-    margin-bottom: 0%;
-    margin-top: 0%;
-    margin-left: 0%;
 }
 
 .adress {
-    font-size: 1em;
+    font-size: 80%;
     font-family: 'Brinnan-Light';
     color: #ffffff;
     margin-left: 0px;
     margin-right: 0%;
-    margin-bottom: 14vh;
+    margin-bottom: 9vh;
     width: 100%;
-    position: relative;
     padding: 3px;
-    text-align: center;
+    text-align: left;
 }
 
 
 .logo-fifth {
-    left: 31%;
     height: auto;
-    width: 48%;
-    max-width: 740px;
     position: relative;
-    min-width: 100px;
+    width: 100%;
+    max-width: 120px;
 }
 
 .side-r {
     display: flex;
     flex-direction: column;
-    align-content: center;
     justify-content: center;
-    align-items: stretch;
+    align-items: end;
     height: auto;
-    width: 26%;
     flex-wrap: nowrap;
-
-}
-
-.container-icons {
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    margin-bottom: 6%;
-}
-
-.container-icons img {
-    height: 6vh;
-    width: auto;
-    padding-right: 0.2em;
-    min-height: 45px;
 }
 
 #privacy-modal {
@@ -3615,13 +3576,15 @@ img {
 }
 
 .privacy {
-    font-size: 80%;
+    position: relative;
+    bottom: 25px;
+    font-size: 70%;
     font-family: Brinnan-Light;
     color: #ffffff;
     text-align: left;
     white-space: nowrap;
+    margin: 0;
 }
-
 
 .logodown {
     position: absolute;
@@ -3634,8 +3597,10 @@ img {
 
 .BALANCE {
     text-align: center;
-    font-size: 1.5em;
+    font-size: 120%;
     letter-spacing: 0.1em;
+    font-family: 'Winkell-SuperWide';
+    line-height: 1;
 }
 
 
@@ -3706,18 +3671,9 @@ img {
 /* Footer */
 
 #footer {
-    display: -moz-flex;
-    display: -webkit-flex;
-    display: -ms-flex;
     display: flex;
-    -moz-align-items: center;
-    -webkit-align-items: center;
-    -ms-align-items: center;
-    align-items: center;
-    -moz-justify-content: space-between;
-    -webkit-justify-content: space-between;
-    -ms-justify-content: space-between;
-    justify-content: center;
+    align-items: end;
+    justify-content: space-between;
     position: relative;
     margin: 0;
     line-height: 1em;
