@@ -51,6 +51,31 @@
 
 @media screen and (min-width: 2090px) and (max-width: 13440px) and (min-height: 1080px) {
 
+    #intro {
+        background: url(../../images/4k/SCALI_ST1_14_Vignette_B_Gift_4K.jpg);
+        background-size: cover;
+        background-attachment: fixed, fixed;
+        background-position: left, bottom center;
+        background-repeat: repeat, no-repeat;
+        caret-color: transparent;
+    }
+    #six {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-end;
+        align-content: center;
+        flex-wrap: nowrap;
+        caret-color: transparent;
+        background: url(../../images/4k/SCALI_ST1_13_Vignette_A_Gift_4K.jpg) left top / cover fixed, center center fixed;
+        background-position: left top, center center;
+    }
+    .left-half {
+        width: 45%;
+        height: auto;
+        background: url(../../images/4k/SCALI_ST1_02_Hero_Dusk_view_4K.jpg) center/cover no-repeat;
+        background-position: 85% 25%;
+    }
     #five {
         height: auto;
     }
@@ -163,9 +188,6 @@
         margin-left: 0vw;
     }
 
-    #tree {
-        min-height: 500px;
-    }
 
 
     .header-vertical-line {
@@ -255,7 +277,7 @@
         width: 30%;
         position: relative;
         margin: 0%;
-        padding-top: 54px;
+        padding-top: 40px;
         padding-bottom: 17px;
     }
 
@@ -273,7 +295,7 @@
     .quiet3 {
         line-height: 1.1em;
         text-align: center;
-        margin-bottom: 10%;
+        margin-bottom: 40px;
         margin-top: 2%;
     }
 

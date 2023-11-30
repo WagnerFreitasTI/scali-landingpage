@@ -2505,7 +2505,7 @@ body.is-touch .poptrox-popup .closer {
 	width: 18%;
 	position: relative;
 	margin: 0%;
-	padding-top: 64px;
+	padding-top: 10%;
 }
 
 /* <section id="four" */
@@ -2718,7 +2718,7 @@ body {
 .left-half {
 	width: 45%;
 	height: auto;
-	background: url(../../images/SCALI_ST1_02_Hero_Dusk_view_R1.jpg) center/cover no-repeat;
+	background: url(../../images/hd/SCALI_ST1_02_Hero_Dusk_view_hd.webp) center/cover no-repeat;
 	background-position: 85% 25%;
 }
 
@@ -3799,7 +3799,7 @@ p.adress {
 /* Intro */
 
 #intro {
-	background: url("../../images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg");
+	background: url("../../images/hd/SCALI_ST1_14_Vignette_B_Gift_hd.webp");
 	background-size: cover;
 	background-attachment: fixed, fixed;
 	background-position: left, bottom center;
@@ -3875,7 +3875,7 @@ p.adress {
 }
 
 #six {
-	background: url("../../images/SCALI_ST1_13_Vignette_A_GIFT_R1.jpg");
+	background: url("../../images/hd/SCALI_ST1_13_Vignette_A_Gift_hd.webp");
 	background-size: cover;
 	background-attachment: fixed, fixed;
 	background-position: top left, center center;
