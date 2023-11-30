@@ -1,6 +1,7 @@
 @media screen and (max-width: 960px) {
 
-    html, body {
+    html,
+    body {
         width: 100vw;
         overflow-x: hidden;
     }
@@ -19,30 +20,76 @@
         padding: 16px;
     }
 
-        #header1 .menu-wrapper {
-            display: inline-flex;
-            align-items: center;
+    #header1 .menu-wrapper {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    #header1 .logo-img {
+        width: 80px;
+    }
+
+    #header1 nav {
+        margin-left: 16px;
+        column-gap: 12px;
+    }
+
+    #header1 nav a {
+        font-size: 45%;
+    }
+
+    #header1 .register-wrapper .logo {
+        display: none;
+    }
+
+    #header1 .register-wrapper button {
+        padding: 8px 10px 6px;
+        height: auto;
+    }
+
+    .text_sec1 {
+        width: auto;
+        white-space: nowrap;
+    }
+
+    #one {
+        min-height: auto;
+        padding-top: 32px;
+        padding-bottom: 32px;
+    }
+
+    #one .box.style2 {
+        background: none;
+    }
+
+    .box.style2 {
+        width: 100%;
+    }
+
+    #two {
+        aspect-ratio: 1 / 1;
+    }
+
+    #two .navigation {
+        left: 5%;
+        bottom: 46px;
+        right: unset;
+        width: 135px;
+    }
+
+        #two .navigation-button::after {
+            font-size: 21px;
         }
 
-        #header1 .logo-img {
-            width: 80px;
+        #two .navigation-button-prev::after {
+            transform: translateX(10px);
         }
 
-        #header1 nav {
-            margin-left: 16px;
-            column-gap: 12px;
+        #two .navigation-button-next::after {
+            transform: translateX(-10px);
         }
 
-            #header1 nav a {
-                font-size: 45%;
-            }
-        
-            #header1 .register-wrapper .logo {
-                display: none;
-            }
-
-            #header1 .register-wrapper button {
-                padding: 8px 10px 6px;
-                height: auto;
-            }
+        #two .navigation-button span {
+            height: 2px;
+        }
 }
