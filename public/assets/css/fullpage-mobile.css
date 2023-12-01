@@ -394,6 +394,7 @@
     }
 
     #eight .swiper {
-        aspect-ratio: 4 / 5;
+        aspect-ratio: initial;
+        max-height: initial;
     }
 }
