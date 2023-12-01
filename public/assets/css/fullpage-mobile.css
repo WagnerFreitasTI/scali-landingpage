@@ -211,7 +211,7 @@
     .div-flex label:first-child {
         display: block;
         width: 100%;
-        white-space: wrap !important;
+        white-space: wrap;
         line-height: 1.2;
         margin-bottom: 2px;
     }

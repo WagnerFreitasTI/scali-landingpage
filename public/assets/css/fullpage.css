@@ -3940,3 +3940,7 @@ img {
     margin-right: 0 !important;
     width: auto !important;
 }
+
+.div-flex label:first-child {
+    white-space: nowrap;
+}
