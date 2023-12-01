@@ -98,7 +98,7 @@
 
 @media(max-width:3140px) {
     .text_sec1 {
-        margin-top: 9vh;
+        margin-top: 14vh;
         margin-left: 1vw;
     }
     .main.style1 h2 {
@@ -334,9 +334,9 @@
     }
 
     .commin {
-        font-size: 0.8em;
+        font-size: 1em;
         white-space: wrap;
-        width: 50vw;
+        width: 53vw;
     }
 
     .box.style2 {

@@ -238,21 +238,17 @@ h6 {
 	font-size: 5em;
 	font-family: 'Beliau-Regular';
 	letter-spacing: 0.01em;
+	line-height: .9;
 }
 
 .text_sec1 {
     display: flex;
-    width: 24vw;
-    min-width: 250px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-end;
-    justify-content: flex-start;
-    align-items: center;
-    margin-top: 20vh;
+    width: 100%;
+    flex-direction: column;
+    margin-top: 22%;
     position: relative;
-    margin-left: 8vw;
-    line-height: normal;
+    margin-left: 14%;
+    line-height: 1;
 }
 
 .title {
@@ -925,7 +921,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 28pt;
+		font-size: 39pt;
 	}
 
 }
@@ -936,7 +932,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 20pt;
+		font-size: 24pt;
 	}
 
 }
@@ -947,7 +943,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 16pt;
+		font-size: 19pt;
 	}
 
 }
@@ -2611,7 +2607,7 @@ body {
 
 .main.style1 h2 {
 	font-size: 2.56em;
-	line-height: 1em;
+	line-height: 0.9em;
 	margin-bottom: 1vh;
 	margin-left: 0vw;
 	margin-top: 0vh;
@@ -2640,7 +2636,6 @@ body {
 	font-family: 'Beliau-Regular';
 	color: #0b1b30; 
 	white-space: wrap;
-	font-weight: bold;
 }
 
 
