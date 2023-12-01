@@ -262,4 +262,19 @@
         line-height: 1.8;
         padding: 32px 0 48px;
     }
+
+    #eleven {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right-section11 {
+        border-width: 12px;
+        padding: 32px 24px;
+        row-gap: 16px;
+    }
+
+    .right-section11 p {
+        font-size: 80%;
+    }
 }
