@@ -277,4 +277,26 @@
     .right-section11 p {
         font-size: 80%;
     }
+
+    #footer {
+        flex-direction: column;
+        align-items: start;
+        box-sizing: border-box;
+        padding: 32px;
+    }
+
+    .side-l {
+        align-items: start;
+        width: 100%;
+    }
+
+    .menu-footer {
+        display: flex;
+    }
+
+    .disclaimer {
+        width: 100%;
+        text-align: justify;
+        font-size: 65%;
+    }
 }

@@ -2544,6 +2544,7 @@ body {
     margin-bottom: 1vh;
     margin-left: 0vw;
     margin-top: 0vh;
+    color: #ffffff;
 }
 
 .parag1 {
@@ -3450,7 +3451,7 @@ img {
     line-height: 1;
 }
 
-.side-center .bl-dow {
+.bl-dow {
     display: flex;
     flex-direction: row;
     align-content: center;
@@ -3468,7 +3469,6 @@ img {
     align-items: flex-start;
     /* margin-top: 4%; */
     font-family: 'Winkell-SuperWide';
-    padding-bottom: 90px;
     font-size: 1.1em;
 }
 
@@ -3480,15 +3480,10 @@ img {
 }
 
 .adress {
-    font-size: 80%;
-    font-family: 'Brinnan-Light';
+    font-size: 150%;
+    font-family: 'Brinnan-Regular';
     color: #ffffff;
-    margin-left: 0px;
-    margin-right: 0%;
-    margin-bottom: 9vh;
-    width: 100%;
-    padding: 3px;
-    text-align: left;
+    text-align: right;
 }
 
 
@@ -3575,8 +3570,6 @@ img {
 }
 
 .privacy {
-    position: relative;
-    bottom: 25px;
     font-size: 70%;
     font-family: Brinnan-Light;
     color: #ffffff;
@@ -3671,23 +3664,19 @@ img {
 
 #footer {
     display: flex;
-    align-items: end;
+    align-items: center;
     justify-content: space-between;
     position: relative;
     margin: 0;
     line-height: 1em;
-    padding: 40px 40px 100px;
+    padding: 40px 40px 30px;
     background: #0b1b30;
     color: rgba(185, 186, 187, 0.5);
     height: auto;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: nowrap;
     align-content: stretch;
     caret-color: transparent;
-}
-
-#footer>* {
-    margin-bottom: 0;
 }
 
 #footer a {
@@ -3707,39 +3696,23 @@ img {
     font-size: 0.9em;
 }
 
-@media screen and (max-width: 1000px) {
-
-    #footer {
-        -moz-flex-direction: column;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        -moz-justify-content: center;
-        -webkit-justify-content: center;
-        -ms-justify-content: center;
-        justify-content: center;
-        line-height: 1.5em;
-        text-align: center;
-        padding: 2em 1em 2em 1em;
-    }
-
-    #footer>* {
-        margin: 0 0 1em 0;
-    }
-
+#footer .footer-row {
+    display: inline-flex;
+    width: 100%;
+    max-width: 1500px;
+    justify-content: space-between;
+    align-items: center;
 }
-
 
 /* Intro */
 
 #intro {
-    background: url("../../images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg");
-    background-size: cover;
-    background-attachment: fixed, fixed;
-    background-position: left, bottom center;
-    background-repeat: repeat, no-repeat;
-    caret-color: transparent;
-
+	background: url("../../images/hd/SCALI_ST1_14_Vignette_B_Gift_hd.webp");
+	background-size: cover;
+	background-attachment: fixed, fixed;
+	background-position: left, bottom center;
+	background-repeat: repeat, no-repeat;
+	caret-color: transparent;
 }
 
 /* One */
@@ -3948,14 +3921,20 @@ img {
 }
 
 .disclaimer {
-    position: absolute;
-    bottom: 16px;
-    left: 0px;
-    padding: 0 40px;
-	line-height: normal;
+    margin-top: 32px;
+	line-height: 1.2;
 	font-size: 0.5em;
-	font-family: Brinnan-Light;
-	color: #cdcdcd;
-	width: 100%;
+	font-family: sans-serif;
+	color: #7f7f7f;
+	width: 100%!important;
 	text-align: justify;
+}
+
+.mobile-only {
+    display: none;
+}
+
+.side-r {
+    margin-right: 0 !important;
+    width: auto !important;
 }
