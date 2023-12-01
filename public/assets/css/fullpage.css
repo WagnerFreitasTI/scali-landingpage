@@ -3761,15 +3761,55 @@ img {
 /* Two */
 
 #two {
-    background: url("../../images/young_father.png");
-    background-size: cover;
-    background-attachment: fixed, fixed;
-    background-position: left, bottom center;
-    background-repeat: repeat, no-repeat;
     position: relative;
-    height: 100vh;
+    width: 100%;
     caret-color: transparent;
+    box-sizing: border-box;
+    aspect-ratio: 2 / 1;
 }
+
+    #two .swiper .swiper-slide {
+        position: relative;
+    }
+
+        #two .swiper .swiper-slide img {
+            width: 100%;
+        }
+
+        #two .navigation {
+            position: absolute;
+            right: 60px;
+            bottom: 48px;
+            display: flex;
+            align-items: center;
+            z-index: 10;
+            width: 350px;
+        }
+
+            #two .navigation-button {
+                display: inline-flex;
+                color: #ffffff;
+                width: 50%;
+            }
+
+            #two .navigation-button-prev {
+                flex-direction: row-reverse;
+            }
+
+            #two .navigation-button-prev::after {
+                transform: translateX(18px);
+            }
+
+            #two .navigation-button-next::after {
+                transform: translateX(-18px);
+            }
+            
+            #two .navigation-button span {
+                display: inline-block;
+                width: 100%;
+                height: 3px;
+                background-color: #ffffff;
+            }
 
 #tree {
     background-color: #263239;
@@ -3786,7 +3826,7 @@ img {
 
 #four {
     overflow: hidden;
-    height: 100vh;
+    height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: row;

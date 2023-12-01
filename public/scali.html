@@ -2,12 +2,24 @@
 <html lang="en">
 
 <head>
+    <!-- Google tag (gtag.js) --> <script async src="https://www.googletagmanager.com/gtag/js?id=G-LVNHJ392ZT"></script> <script> window.dataLayer = window.dataLayer || []; function gtag(){dataLayer.push(arguments);} gtag('js', new Date()); gtag('config', 'G-LVNHJ392ZT'); </script>
+
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-M52RBD8K');</script>
+    <!-- End Google Tag Manager -->
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scale</title>
     <link rel="stylesheet" href="assets/css/fullpage.css" />
+    <link rel="stylesheet" href="assets/css/fullpage-mobile.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/S-favIcon.png">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="icon" type="image/x-icon" sizes="32x32" href="./images/S-favIcon.ico">
     <noscript>
         <link rel="stylesheet" href="assets/css/noscript.css" />
     </noscript>
@@ -15,6 +27,10 @@
 </head>
 
 <body class="is-preload">
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M52RBD8K" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+
     <header id="header1">
         <div class="menu-wrapper">
             <a href="#intro">
@@ -82,12 +98,37 @@
                 </div>
         </section>
 
-        <section id="two" class="main mainMobile left dark fullscreen style2 section-nap-scroll">
+        <section id="two">
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-1.jpg" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-2.jpg" />
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <img src="images/carousel/desktop-3.jpg" />
+                        </picture>
+                    </div>
+                </div>
 
-            <img src="images/S.png" alt="Imagem S" class="s-sec2">
-            <div class="text-logo">YOUR LIFE <span style="font-family: 'Brinnan-Light';
-			 color: #f6f6f6;">
-                    IN FOCUS. </span>
+                <div class="navigation">
+                    <div class="navigation-button navigation-button-prev swiper-button-prev">
+                        <span></span>
+                    </div>
+                    <div class="navigation-button navigation-button-next swiper-button-next">
+                        <span></span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -108,7 +149,7 @@
             <div id="menu">
                 <h3 class="location">
                     LOCATION</h3>
-                <a href=" #" onclick="return showImage(this, 'images/Layers JPEG-PNG/FULL_MAP.jpg');">NEIGHBOURHOOD</a>
+                <a href=" #" onclick="return showImage(this, 'images/Layers JPEG-PNG/FULL_MAP.jpg');" class="active">NEIGHBOURHOOD</a>
                 <a class="" href="#"
                     onclick="return showImage(this, 'images/Layers JPEG-PNG/RESTAURANTS.png');">RESTAURANTS</a>
                 <a href="#" onclick="return showImage(this, 'images/Layers JPEG-PNG/PARKS.png');">PARKS</a>
@@ -479,7 +520,7 @@
                     </h3>
                 </div>
             </div>
-            
+
             <a href="https://fifthave.ca/"><img src="images/Fifth-Ave.png" alt="FIFTH AVU" class="logo-fifth"></a>
 
             <div class="side-r">
@@ -649,8 +690,16 @@
     }
 </script>
 
-
-
-
-
+<script src="assets/js/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper("#two > .swiper", {
+        loop: true,
+        spaceBetween: 0,
+        centeredSlides: true,
+        navigation: {
+            nextEl: ".navigation-button-next",
+            prevEl: ".navigation-button-prev",
+        }
+    })
+</script>
 </html>
