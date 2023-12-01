@@ -232,7 +232,34 @@
         flex-direction: column;
     }
 
-        .alin10 {
-            width: 100%;
-        }
+    .alin10 {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .text10 {
+        margin-right: 0;
+        width: 270px;
+        font-size: 130%;
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: 16px;
+        padding: 0;
+    }
+
+    .text10 br {
+        display: none;
+    }
+
+    .dev-button {
+        width: auto;
+    }
+
+    .blue-text {
+        width: 270px;
+        font-size: 85%;
+        line-height: 1.8;
+        padding: 32px 0 48px;
+    }
 }
