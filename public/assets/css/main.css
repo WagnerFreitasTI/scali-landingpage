@@ -241,18 +241,18 @@ h6 {
 }
 
 .text_sec1 {
-	display: flex;
-	width: 24vw;
-	min-width: 250px;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: flex-end;
-	justify-content: flex-start;
-	align-items: center;
-	margin-top: 20%;
-	position: relative;
-	margin-left: 14%;
-	line-height: normal;
+    display: flex;
+    width: 24vw;
+    min-width: 250px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: flex-end;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 20vh;
+    position: relative;
+    margin-left: 8vw;
+    line-height: normal;
 }
 
 .title {
