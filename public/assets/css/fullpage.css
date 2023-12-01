@@ -3579,6 +3579,10 @@ img {
     margin: 0;
 }
 
+.privacy a {
+    margin-left: 10px;
+}
+
 .logodown {
     position: absolute;
     top: 1vw;
