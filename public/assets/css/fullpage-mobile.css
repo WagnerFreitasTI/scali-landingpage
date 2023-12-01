@@ -77,21 +77,21 @@
         width: 135px;
     }
 
-        #two .navigation-button::after {
-            font-size: 21px;
-        }
+    #two .navigation-button::after {
+        font-size: 21px;
+    }
 
-        #two .navigation-button-prev::after {
-            transform: translateX(10px);
-        }
+    #two .navigation-button-prev::after {
+        transform: translateX(10px);
+    }
 
-        #two .navigation-button-next::after {
-            transform: translateX(-10px);
-        }
+    #two .navigation-button-next::after {
+        transform: translateX(-10px);
+    }
 
-        #two .navigation-button span {
-            height: 2px;
-        }
+    #two .navigation-button span {
+        height: 2px;
+    }
 
     .text-sec3 {
         padding-top: 20px;
@@ -105,24 +105,72 @@
         padding-top: 32px;
     }
 
-        .amenities-logo {
-            position: static;
-            width: 100px
-        }
+    .amenities-logo {
+        position: static;
+        width: 100px
+    }
 
-        .Streetscape_image {
-            height: auto;
-            width: 98%;
-            margin: 0;
-        }
+    .Streetscape_image {
+        height: auto;
+        width: 98%;
+        margin: 0;
+    }
 
-        .amenities {
-            width: 98%;
-            max-width: unset;
-            margin: 40px auto 0;
-            align-items: center;
-            padding-bottom: 40px;
-        }
+    .amenities {
+        width: 98%;
+        max-width: unset;
+        margin: 40px auto 0;
+        align-items: center;
+        padding-bottom: 40px;
+    }
+
+    .amenities img {
+        width: 80%;
+    }
+
+    #seven {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .left-section7 {
+        background-position: center bottom;
+        flex: 400px;
+        position: relative;
+    }
+
+    .s-sec2 {
+        width: 48px;
+    }
+
+    .text-logo {
+        left: 46px;
+        bottom: 20px;
+    }
+
+    .right-section7 {
+        flex: 1 1 0;
+        padding-top: 56px;
+        padding-bottom: 48px;
+        align-items: center;
+        row-gap: 24px;
+    }
+
+    .bags_family {
+        width: 280px;
+        margin-bottom: 16px;
+    }
+
+    .quiet4 {
+        width: 250px;
+        font-size: 100%;
+    }
+
+    .button {
+        margin-right: 0;
+        height: unset;
+        padding: 12px 32px;
+    }
 
     #eight {
         height: unset;
@@ -137,4 +185,54 @@
         width: 48px;
         ;
     }
+
+    #nine {
+        flex-direction: column;
+    }
+
+    #nine .left-half {
+        width: 100%;
+        aspect-ratio: 1.8 / 1;
+        background-position: center center;
+    }
+
+    .right-half h4 {
+        margin-bottom: 12px;
+    }
+
+    #nine .parag3 {
+        font-size: 100%;
+        line-height: 1.2;
+    }
+
+    .par-form {
+        width: 100%;
+    }
+
+    .div-flex label:first-child {
+        display: block;
+        width: 100%;
+        white-space: wrap !important;
+        line-height: 1.2;
+        margin-bottom: 2px;
+    }
+
+    .Checkboxers {
+        padding: 0;
+        margin-bottom: 36px;
+    }
+
+    .form-button {
+        height: auto !important;
+        margin-top: -16px;
+    }
+
+    #ten {
+        padding-top: 48px;
+        flex-direction: column;
+    }
+
+        .alin10 {
+            width: 100%;
+        }
 }
