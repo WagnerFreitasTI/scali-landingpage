@@ -326,7 +326,8 @@
     }
 
     .side-r {
-        align-items: start;
+        width: 100% !important;
+        text-align: center;
     }
 
     .adress {
