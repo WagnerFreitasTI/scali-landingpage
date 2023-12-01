@@ -1,4 +1,7 @@
 @media screen and (max-width: 960px) {
+    .mobile-only {
+        display: block;
+    }
 
     html,
     body {
@@ -70,27 +73,26 @@
         aspect-ratio: 1 / 1;
     }
 
-    #two .navigation {
-        left: 5%;
-        bottom: 46px;
-        right: unset;
-        width: 135px;
+    .navigation {
+        position: initial;
+        width: auto;
     }
 
-    #two .navigation-button::after {
-        font-size: 21px;
+    .navigation .navigation-button {
+        width: 0;
     }
 
-    #two .navigation-button-prev::after {
-        transform: translateX(10px);
+    .navigation .navigation-button::after {
+        font-size: 36px;
     }
 
-    #two .navigation-button-next::after {
-        transform: translateX(-10px);
+    .navigation-button-prev {
+
     }
 
-    #two .navigation-button span {
-        height: 2px;
+    .navigation .navigation-button span {
+        width: 0;
+        height: 0;
     }
 
     .text-sec3 {
@@ -174,16 +176,16 @@
 
     #eight {
         height: unset;
-        padding-bottom: 38px;
+        padding: 24px 24px 54px;
     }
 
     .your-life-in-focus {
         column-gap: 0;
+        right: 24px;
     }
 
     .your-life-in-focus img {
         width: 48px;
-        ;
     }
 
     #nine {

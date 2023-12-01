@@ -107,11 +107,8 @@
         </section>
 
         <section id="two">
-            <!-- Slider main container -->
             <div class="swiper">
-                <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-                    <!-- Slides -->
                     <div class="swiper-slide">
                         <picture>
                             <source srcset="images/carousel/mobile-1.jpg" media="(orientation: portrait)" />
@@ -222,39 +219,38 @@
         </section>
 
         <section id="eight" class="main  right dark fullscreen section-nap-scroll">
-            <div class="carrosel">
-                <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <picture>
-                                <source srcset="images/carousel-2/mobile-1.jpg" media="(max-width: 960px)" />
-                                <img class="d-block w-100" src="images/SCALI_ST1_15_Vignette_C_GIFT_R1.jpg"
-                                    alt="Image 1" style="object-position: bottom center;">
-                            </picture>
-                        </div>
-                        <div class="carousel-item">
-                            <picture>
-                                <source srcset="images/carousel-2/mobile-2.jpg" media="(max-width: 960px)" />
-                                <img class="d-block w-100" src="images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg"
-                                    alt="Image 2">
-                            </picture>
-                        </div>
-                        <div class="carousel-item">
-                            <picture>
-                                <source srcset="images/carousel-2/mobile-3.jpg" media="(max-width: 960px)" />
-                                <img class="d-block w-100" src="images/SCALI_ST1_13_Vignette_A_GIFT_R1.jpg"
-                                    alt="Image 3">
-                            </picture>
-                        </div>
+            <div class="swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/carousel-2/mobile-1.jpg" media="(max-width: 960px)" />
+                            <img class="d-block w-100" src="images/SCALI_ST1_15_Vignette_C_GIFT_R1.jpg"
+                                alt="Image 1" style="object-position: bottom center;">
+                        </picture>
                     </div>
-                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/carousel-2/mobile-2.jpg" media="(max-width: 960px)" />
+                            <img class="d-block w-100" src="images/SCALI_ST1_14_Vignette_B_GIFT_R1.jpg"
+                                alt="Image 2">
+                        </picture>
+                    </div>
+                    <div class="swiper-slide">
+                        <picture>
+                            <source srcset="images/carousel-2/mobile-3.jpg" media="(max-width: 960px)" />
+                            <img class="d-block w-100" src="images/SCALI_ST1_13_Vignette_A_GIFT_R1.jpg"
+                                alt="Image 3">
+                        </picture>
+                    </div>
+                </div>
+
+                <div class="navigation">
+                    <div class="navigation-button navigation-button-prev swiper-button-prev">
+                        <span></span>
+                    </div>
+                    <div class="navigation-button navigation-button-next swiper-button-next">
+                        <span></span>
+                    </div>
                 </div>
             </div>
 
@@ -717,7 +713,7 @@
 
 <script src="assets/js/swiper-bundle.min.js"></script>
 <script>
-    const swiper = new Swiper("#two > .swiper", {
+    const swiper = new Swiper(".swiper", {
         loop: true,
         spaceBetween: 0,
         centeredSlides: true,

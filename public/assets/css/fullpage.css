@@ -3161,7 +3161,6 @@ body.is-touch .main {
 .carrosel {
     display: flex;
     width: 100%;
-    padding: 5vw;
 }
 
 .carousel-control-prev-icon,
@@ -3740,15 +3739,15 @@ img {
     aspect-ratio: 2 / 1;
 }
 
-    #two .swiper .swiper-slide {
+    .swiper .swiper-slide {
         position: relative;
     }
 
-        #two .swiper .swiper-slide img {
+        .swiper .swiper-slide img {
             width: 100%;
         }
 
-        #two .navigation {
+        .navigation {
             position: absolute;
             right: 60px;
             bottom: 48px;
@@ -3758,25 +3757,25 @@ img {
             width: 350px;
         }
 
-            #two .navigation-button {
+            .navigation .navigation-button {
                 display: inline-flex;
                 color: #ffffff;
                 width: 50%;
             }
 
-            #two .navigation-button-prev {
+            .navigation .navigation-button-prev {
                 flex-direction: row-reverse;
             }
 
-            #two .navigation-button-prev::after {
+            .navigation .navigation-button-prev::after {
                 transform: translateX(18px);
             }
 
-            #two .navigation-button-next::after {
+            .navigation .navigation-button-next::after {
                 transform: translateX(-18px);
             }
             
-            #two .navigation-button span {
+            .navigation .navigation-button span {
                 display: inline-block;
                 width: 100%;
                 height: 3px;
@@ -3856,6 +3855,7 @@ img {
     background-repeat: no-repeat;
     height: 100vh;
     caret-color: transparent;
+    padding: 5vw;
 }
 
 #nine {}
