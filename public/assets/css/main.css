@@ -2615,7 +2615,6 @@ body {
 	margin-bottom: 1vh;
 	margin-left: 0vw;
 	margin-top: 0vh;
-	font-weight: lighter;
 }
 
 .lifestyle {
@@ -2641,6 +2640,7 @@ body {
 	font-family: 'Beliau-Regular';
 	color: #0b1b30; 
 	white-space: wrap;
+	font-weight: bold;
 }
 
 
