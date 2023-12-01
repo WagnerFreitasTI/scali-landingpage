@@ -958,7 +958,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 16pt;
+		font-size: 14pt;
 	}
 
 }
@@ -969,7 +969,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 13pt;
+		font-size: 12pt;
 	}
 
 }
@@ -980,7 +980,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 13pt;
+		font-size: 12,5pt;
 	}
 
 }
@@ -2610,7 +2610,7 @@ body {
 }
 
 .main.style1 h2 {
-	font-size: 5em;
+	font-size: 2.56em;
 	line-height: 1em;
 	margin-bottom: 1vh;
 	margin-left: 0vw;
@@ -2635,6 +2635,14 @@ body {
 	font-size: 1.2em;
 	text-align: left;
 }
+
+.commin{
+	font-size: 1em;
+	font-family: 'Beliau-Regular';
+	color: #0b1b30; 
+	white-space: wrap;
+}
+
 
 .main.style1>.content {
 	-moz-transition: opacity 1s ease;
