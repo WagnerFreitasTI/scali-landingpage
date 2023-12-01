@@ -2420,6 +2420,9 @@ body.is-touch .poptrox-popup .closer {
 }
 
 /* <section id="four" */
+#four {
+    background-color: #a7a68f;
+}
 
 #menu {
     display: flex;
@@ -2428,7 +2431,6 @@ body.is-touch .poptrox-popup .closer {
     align-items: start;
     padding-left: 150px;
     padding-right: 80px;
-    background-color: #a7a68f;
     color: white;
     box-sizing: border-box;
     overflow-y: hidden;

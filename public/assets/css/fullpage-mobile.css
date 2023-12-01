@@ -3,6 +3,10 @@
         display: block;
     }
 
+    .desktop-only {
+        display: none;
+    }
+
     html,
     body {
         width: 100vw;
@@ -50,11 +54,6 @@
         height: auto;
     }
 
-    .text_sec1 {
-        width: auto;
-        white-space: nowrap;
-    }
-
     #one {
         min-height: auto;
         padding-top: 32px;
@@ -86,9 +85,7 @@
         font-size: 36px;
     }
 
-    .navigation-button-prev {
-
-    }
+    .navigation-button-prev {}
 
     .navigation .navigation-button span {
         width: 0;
@@ -302,26 +299,26 @@
         row-gap: 20px;
     }
 
-        .logo-fifth {
-            width: 80px;
-        }
+    .logo-fifth {
+        width: 80px;
+    }
 
-        .logo2down {
-            width: 180px;
-        }
+    .logo2down {
+        width: 180px;
+    }
 
-        .bl-dow {
-            order: 1;
-            grid-column: span 2;
-        }
+    .bl-dow {
+        order: 1;
+        grid-column: span 2;
+    }
 
-        .privacy {
-            order: 2;
-            grid-column: span 2;
-            display: inline-flex;
-            flex-direction: column;
-            row-gap: 4px;
-        }
+    .privacy {
+        order: 2;
+        grid-column: span 2;
+        display: inline-flex;
+        flex-direction: column;
+        row-gap: 4px;
+    }
 
     .side-l {
         align-items: start;
@@ -345,5 +342,37 @@
         text-align: justify;
         font-size: 65%;
         margin: 0
+    }
+
+    #four {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 24px;
+        height: auto !important;
+        min-height: auto !important;
+        padding: 48px 5vw 32px;
+    }
+
+    #four .location {
+        text-align: center !important;
+        width: 100%;
+    }
+
+    #menu {
+        order: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 16px;
+        width: 100%;
+        padding: 0;
+    }
+
+    #menu a {
+        font-size: 50%;
+        line-height: 3;
+    }
+
+    #content4 {
+        aspect-ratio: 1.56 / 1;
     }
 }
