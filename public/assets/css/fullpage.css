@@ -984,7 +984,7 @@ h3 {
 }
 
 .about {
-    font-size: 80%;
+    font-size: 19px;
     font-family: Brinnan-Light;
     color: white;
     line-height: 1.4;
@@ -2751,7 +2751,7 @@ body {
     width: 50%;
     color: #0b1b30;
     font-family: 'Brinnan-Regular';
-    font-size: 100%;
+    font-size: 24px;
     line-height: normal;
     padding: 10px;
     position: relative;
@@ -2763,7 +2763,7 @@ body {
     color: #0b1b30;
     font-family: 'Brinnan-light';
     width: 71%;
-    font-size: 80%;
+    font-size: 19px;
     font-weight: lighter;
     position: relative;
     padding-bottom: 80px;
@@ -3096,6 +3096,7 @@ body.is-touch .main {
     margin-top: 12px;
     margin-bottom: 40px;
     margin-left: -5px;
+    font-size: 43px;
 }
 
 
@@ -3173,7 +3174,7 @@ body.is-touch .main {
 
 .your-life-in-focus {
     position: absolute;
-    right: 5vw;
+    right: 13vw;
     bottom: 1vw;
     display: flex;
     align-items: center;
@@ -3607,7 +3608,7 @@ img {
 }
 
     .right-section11 p {
-        font-size: 60%;
+        font-size: 14px;
         max-width: 475px;
         line-height: 1.6;
         color: #0b1b30;
@@ -3851,8 +3852,17 @@ img {
     padding: 5vw;
 }
 
-#nine {}
+#eight .swiper {
+    aspect-ratio: 1.8 / 1;
+    max-height: 80vh;
+    overflow: hidden;
+}
 
+#eight .swiper img {
+    object-fit: cover;
+    object-position: center center;
+    height: 100%;
+}
 
 #ten {
     height: auto;
@@ -3916,7 +3926,7 @@ img {
 .disclaimer {
     margin-top: 32px;
 	line-height: 1.2;
-	font-size: 0.5em;
+	font-size: 12px;
 	font-family: sans-serif;
 	color: #7f7f7f;
 	width: 100%!important;
