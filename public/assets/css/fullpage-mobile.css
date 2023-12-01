@@ -124,7 +124,17 @@
             padding-bottom: 40px;
         }
 
-            .amenities img {
-                width: 80%;
-            }
+    #eight {
+        height: unset;
+        padding-bottom: 38px;
+    }
+
+    .your-life-in-focus {
+        column-gap: 0;
+    }
+
+    .your-life-in-focus img {
+        width: 48px;
+        ;
+    }
 }
