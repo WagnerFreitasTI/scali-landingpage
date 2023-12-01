@@ -903,7 +903,7 @@ select {
     input,
     textarea,
     select {
-        font-size: 18pt !important;
+        font-size: 14pt !important;
     }
 
 }
@@ -1289,6 +1289,7 @@ form>.fields>.field.quarter {
 
 label {
     display: block;
+    margin-bottom: 0!important;
 }
 
 input[type="text"],
@@ -2645,10 +2646,10 @@ body {
 
 
 .left-half {
-    width: 45%;
-    height: auto;
-    background: url(../../images/SCALI_ST1_02_Hero_Dusk_view_R1.jpg) center/cover no-repeat;
-    background-position: 58% 25%;
+	width: 45%;
+	height: auto;
+	background: url(../../images/hd/SCALI_ST1_02_Hero_Dusk_view_hd.webp) center/cover no-repeat;
+	background-position: 85% 25%;
 }
 
 .le .parag2 {
@@ -2658,30 +2659,25 @@ body {
 }
 
 .par-form {
-    font-size: 75%;
-    display: flex;
-    flex-direction: column;
-    row-gap: 20px;
-}
-
-.par-form label {
-    display: block;
-    margin-bottom: -12px;
+	font-size: 0.86em;
 }
 
 .right-half {
-    padding-left: 3em;
-    padding-top: 2em;
-    width: 57%;
-    background-color: #be694b;
-    font-family: 'Brinnan-Light';
-    color: #ffffff;
-    padding-right: 3em;
+	padding-left: 3em;
+	padding-top: 2em;
+	width: 57%;
+	background-color: #be694b;
+	font-family: 'Brinnan-Light';
+	color: #ffffff;
+	padding-right: 3em;
+    font-size: 100%;
 }
 
 .right-half h4 {
     font-family: 'Brinnan-Bold';
-    margin-bottom: 40px;
+    color: #ffffff !important;
+    letter-spacing: -0.0325em;
+    font-size: 18px;
 }
 
 .OK-Check {
@@ -2723,18 +2719,15 @@ body {
 }
 
 .text-input {
-    line-height: 2em !important;
-    border: none !important;
-    border-bottom: 1px solid #ffffff !important;
-    background-color: transparent !important;
-    padding: 0.1em !important;
-    color: #ffffff !important;
-    width: 100% !important;
-    box-sizing: border-box !important;
-    outline: none !important;
-    border-radius: 0 !important;
-    font-family: 'Brinnan-Light';
-    font-size: 120% !important;
+	border: none !important;
+	border-bottom: 1px solid #ffffff !important;
+	background-color: transparent !important;
+	color: #ffffff !important;
+	width: 100% !important;
+	box-sizing: border-box !important;
+	outline: none !important;
+	border-radius: 0 !important;
+	font-family: 'Brinnan-Light';
 }
 
 .text-input10 {
@@ -2748,7 +2741,7 @@ body {
 }
 
 .parag3 {
-    font-size: 75%;
+    font-size: 15px;
     line-height: 1;
     text-align: justify;
     margin-bottom: 40px;
@@ -2825,8 +2818,6 @@ body {
     justify-content: flex-start;
     flex-direction: row;
     align-items: center;
-    padding-bottom: 12px !important;
-    line-height: 1;
 }
 
 .div-flex input[type="radio"],
@@ -2841,17 +2832,12 @@ body {
     width: 24px;
     position: relative;
     margin-right: 3px;
-    top: 3px;
 }
 
 input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     background-color: #ffffff;
     /* Cor de fundo quando o checkbox está marcado */
-}
-
-.div-flex label {
-    font-size: 75%;
 }
 
 .split-section-horizon {
@@ -2861,6 +2847,7 @@ input[type="checkbox"]:checked {
 }
 
 .form-button {
+    margin-top: 12px;
     background-color: #848c70 !important;
     color: #FFF !important;
     padding: 6px 33px !important;

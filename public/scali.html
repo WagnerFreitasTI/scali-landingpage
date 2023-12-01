@@ -270,75 +270,68 @@
         <section id="nine" class="main  right dark fullscreen split-section ">
             <div class="left-half">
             </div>
-            <div class="right-half section-nap-scroll">
-                <h4>REGISTER TODAY</h4>
-                <p class="parag3">Make Scale your new home and enjoy life in balance. Our sales team will reach out to
-                    you soon with additional information.</p>
+			<div class="right-half section-nap-scroll">
+				<h4>REGISTER TODAY</h4>
+				<p class="parag3">Make Scale your new home and enjoy life in balance. Our sales team will reach out to
+					you soon with additional information. </p>
 
-                <form action="/api/enviar-formulario" method="post" class="par-form" id="form-contato">
-                    <div class="par-form-field">
-                        <label for="fname">First name*</label>
-                        <input type="text" id="fname" name="fname" class="text-input" required>
-                    </div>
+				<form action="/api/enviar-formulario" method="post" class="par-form" id="form-contato">
+					<label for="fname">First name*</label>
+					<input type="text" id="fname" name="fname" class="text-input" required>
 
-                    <div class="par-form-field">
-                        <label for="lname">Last name*</label>
-                        <input type="text" id="lname" name="lname" class="text-input" required>
-                    </div>
+					<label for="lname">Last name*</label>
+					<input type="text" id="lname" name="lname" class="text-input" required>
 
-                    <div class="par-form-field">
-                        <label for="email">E-mail*</label>
-                        <input type="email" id="email" name="email" class="text-input" required>
-                    </div>
+					<label for="email">E-mail*</label>
+					<input type="email" id="email" name="email" class="text-input" required>
 
-                    <div class="par-form-field">
-                        <label for="phone">Phone*</label>
-                        <input type="tel" id="phone" name="phone" class="text-input" required>
-                    </div>
+					<label for="phone">Phone*</label>
+					<input type="tel" id="phone" name="phone" class="text-input" required>
 
-                    <label for="city">City of residence*</label>
-                    <input type="text" id="city" name="city" class="text-input" required>
+					<label for="city">City of residence*</label>
+					<input type="text" id="city" name="city" class="text-input" required>
+					<label for="hearAbout">How did you hear about us?</label>
+					<select id="hearAbout" name="hearAbout" class="text-input" required>
+						<option class="text-input10" value=" "> </option>
+						<option class="text-input10" value="Livabl">Livabl</option>
+						<option class="text-input10" value="Facebook/Instagram">Facebook/Instagram</option>
+						<option class="text-input10" value="Google">Google</option>
+						<option class="text-input10" value="Fifth Ave">Fifth Ave</option>
+						<option class="text-input10" value="Newspaper">Newspaper</option>
+						<option class="text-input10" value="Radio">Radio</option>
+						<option class="text-input10" value="Print ads">Print ads</option>
+						<option class="text-input10" value="Signage">Signage</option>
+						<option class="text-input10" value="Realtor">Realtor</option>
+						<option class="text-input10" value="Family/Friends">Family/Friends</option>
+						<option class="text-input10" value="Other">Other</option>
+					</select>
+					<div class="div-flex text-input" style="align-items: center; padding-right: 15em;">
+						<label for="realtorCheckbox"
+							style="padding-right: 1em;font-weight: bold;font-size: 0.95em;padding-bottom: 0.5em;padding-top: 0.6em;">
+							ARE YOU A REALTOR?</label>
+						<input type="radio" id="yesRealtorCheckbox" name="areYouRealtor" value="yes"
+							class="radio-check">
+						<label for="yesRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">YES</label>
+						<input type="radio" id="noRealtorCheckbox" name="areYouRealtor" value="no" class="radio-check">
+						<label for="noRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">NO</label>
+					</div>
 
-                    <label for="hearAbout">How did you hear about us?</label>
-                    <select id="hearAbout" name="hearAbout" class="text-input" required>
-                        <option class="text-input10" value=" "> </option>
-                        <option class="text-input10" value="Livabl">Livabl</option>
-                        <option class="text-input10" value="Facebook/Instagram">Facebook/Instagram</option>
-                        <option class="text-input10" value="Google">Google</option>
-                        <option class="text-input10" value="Fifth Ave">Fifth Ave</option>
-                        <option class="text-input10" value="Newspaper">Newspaper</option>
-                        <option class="text-input10" value="Radio">Radio</option>
-                        <option class="text-input10" value="Print ads">Print ads</option>
-                        <option class="text-input10" value="Signage">Signage</option>
-                        <option class="text-input10" value="Realtor">Realtor</option>
-                        <option class="text-input10" value="Family/Friends">Family/Friends</option>
-                        <option class="text-input10" value="Other">Other</option>
-                    </select>
-                    <div class="div-flex text-input" style="align-items: center;">
-                        <label for="realtorCheckbox"
-                            style="padding-right: 1em;font-weight: bold;font-size: 75%;padding-bottom: 0.4em;padding-top: 0.5em;">
-                            ARE YOU A REALTOR?</label>
-                        <input type="radio" id="yesRealtorCheckbox" name="areYouRealtor" value="yes">
-                        <label for="yesRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">Yes</label>
 
-                        <input type="radio" id="noRealtorCheckbox" name="areYouRealtor" value="no">
-                        <label for="noRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">No</label>
-                    </div>
+					<div class="div-flex text-input">
+						<label for="contact-method" 
+                        style="padding-right: 1em;font-weight: bold;font-size: 0.95em;padding-bottom: 0.5em;padding-top: 0.6em;">
+							HOW WOULD YOU LIKE <br class="mobile-only">TO BE CONTACTED?</label>
 
-                    <div class="div-flex text-input">
-                        <label for="contact-method"
-                            style="padding-right: 1em; font-weight: bold; font-size: 75%;">
-                            HOW WOULD YOU LIKE TO BE CONTACTED?</label>
+						<input type="checkbox" id="checkbox-phone" name="contact-method" value="Phone">
+						<label for="checkbox-phone" style="padding-right: 1em;padding-left: 0.3em;">Phone</label>
 
-                        <input type="checkbox" id="checkbox-phone" name="contact-method" value="Phone">
-                        <label for="checkbox-phone" style="padding-right: 1em;padding-left: 0.3em;">Phone</label>
+						<input type="checkbox" id="email" name="contact-method" value="E-mail">
+						<label for="email"
+							style="padding-right: 1em;padding-left: 0.3em;white-space: nowrap;">E-mail</label>
 
-                        <input type="checkbox" id="checkbox-email" name="contact-method" value="E-mail">
-                        <label for="checkbox-email" style="padding-right: 1em;padding-left: 0.3em;">E-mail</label>
-
-                        <input type="checkbox" id="checkbox-text" name="contact-method" value="Text">
-                        <label for="checkbox-text" style="padding-right: 1em;padding-left: 0.3em;">Text</label>
-                    </div>
+						<input type="checkbox" id="text" name="contact-method" value="Text">
+						<label for="text" style="padding-right: 1em;padding-left: 0.3em;">Text</label>
+					</div>
 
                     <div class="consentTerm div-flex">
                         <div class="Checkboxers">
