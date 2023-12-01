@@ -160,9 +160,13 @@
         margin-bottom: 16px;
     }
 
-    .quiet4 {
+    .about {
+        font-size: 13px;
+    }
+
+    .about.quiet4 {
         width: 250px;
-        font-size: 100%;
+        font-size: 16px;
     }
 
     .button {
@@ -208,10 +212,13 @@
         width: 100%;
     }
 
+    .div-flex {
+        padding-right: 0 !important;
+    }
+
     .div-flex label:first-child {
         display: block;
         width: 100%;
-        white-space: wrap;
         line-height: 1.2;
         margin-bottom: 2px;
     }
@@ -259,7 +266,7 @@
         width: 270px;
         font-size: 85%;
         line-height: 1.8;
-        padding: 32px 0 48px;
+        padding: 10px 0 48px;
     }
 
     #eleven {
@@ -379,5 +386,14 @@
 
     #content4 {
         aspect-ratio: 1.56 / 1;
+    }
+
+    .textAmenitties {
+        font-size: 28px;
+        padding-left: 0;
+    }
+
+    #eight .swiper {
+        aspect-ratio: 4 / 5;
     }
 }
