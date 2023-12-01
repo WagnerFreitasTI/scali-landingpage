@@ -99,7 +99,13 @@
 @media(max-width:3140px) {
     .text_sec1 {
         margin-top: 9vh;
-        margin-left: 2vw;
+        margin-left: 1vw;
+    }
+    .main.style1 h2 {
+        font-size: 4.5em;
+    }
+    .parag1 {
+        font-size: 1.1em;
     }
 
 }
@@ -306,7 +312,7 @@
     }
 
     .main.style1 h2 {
-        font-size: 2,7em;
+        font-size: 2.6em;
         margin-top: 10vh;
     }
 
@@ -320,9 +326,10 @@
 
     .parag1 {
         margin-bottom: 0vh;
+        margin-top: 0vh;
         font-family: 'Brinnan-Light';
         font-weight: lighter;
-        font-size: 0.80em;
+        font-size: 0.78em;
         letter-spacing: normal;
     }
 
