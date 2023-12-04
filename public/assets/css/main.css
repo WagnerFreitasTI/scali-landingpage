@@ -242,13 +242,13 @@ h6 {
 }
 
 .text_sec1 {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-    margin-top: 22%;
-    position: relative;
-    margin-left: 14%;
-    line-height: 1;
+	display: flex;
+	width: 100%;
+	flex-direction: column !important;
+	margin-top: 22%;
+	position: relative;
+	margin-left: 14%;
+	line-height: 0.9em;
 }
 
 .title {
@@ -976,7 +976,7 @@ select {
 	input,
 	textarea,
 	select {
-		font-size: 12,5pt;
+		font-size: 12, 5pt;
 	}
 
 }
@@ -988,7 +988,7 @@ select {
 	textarea,
 	select {
 		font-size: 12pt;
-		line-height: 1.5em;
+
 	}
 
 }
@@ -2631,10 +2631,10 @@ body {
 	text-align: left;
 }
 
-.commin{
+.commin {
 	font-size: 1em;
 	font-family: 'Beliau-Regular';
-	color: #0b1b30; 
+	color: #0b1b30;
 	white-space: wrap;
 }
 

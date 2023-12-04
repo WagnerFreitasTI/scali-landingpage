@@ -59,6 +59,7 @@
         background-repeat: repeat, no-repeat;
         caret-color: transparent;
     }
+
     #six {
         display: flex;
         flex-direction: row;
@@ -70,12 +71,14 @@
         background: url(../../images/4k/SCALI_ST1_13_Vignette_A_Gift_4K.jpg) left top / cover fixed, center center fixed;
         background-position: left top, center center;
     }
+
     .left-half {
         width: 45%;
         height: auto;
         background: url(../../images/4k/SCALI_ST1_02_Hero_Dusk_view_4K.jpg) center/cover no-repeat;
         background-position: 85% 25%;
     }
+
     #five {
         height: auto;
     }
@@ -101,9 +104,11 @@
         margin-top: 14vh;
         margin-left: 1vw;
     }
+
     .main.style1 h2 {
         font-size: 4.5em;
     }
+
     .parag1 {
         font-size: 1.1em;
     }
@@ -148,17 +153,11 @@
 @media (max-width: 1319px) {
     .text_sec1 {
         display: flex;
-        width: 26vw;
-        min-width: 250px;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-end;
-        justify-content: flex-start;
-        align-items: center;
-        margin-top: 10vh;
         position: relative;
         margin-left: 3vw;
-        line-height: normal;
+        line-height: 0.9em;
+        flex-wrap: nowrap;
+
     }
 
     .par-form {
@@ -182,11 +181,12 @@
         justify-content: space-evenly;
         align-items: flex-start;
     }
+
     .parag1 {
         font-size: 1em;
-      
+
     }
-    
+
 
 
 
@@ -234,6 +234,7 @@
 
 
     }
+
     #intro {
         background: url(../../images/mobile/SCALI_14_Vignette_B.webp);
         background-size: cover;
@@ -242,6 +243,7 @@
         background-repeat: repeat, no-repeat;
         caret-color: transparent;
     }
+
     #six {
         background: url(../../images/mobile/SCALI_ST1_13_Vignette_A_GIFT_R1_MOBILE.webp);
         height: 40vh !important;
@@ -249,6 +251,7 @@
         background-size: cover;
 
     }
+
     .left-half {
         width: 45%;
         height: auto;
@@ -321,9 +324,6 @@
         font-size: 2.4em;
     }
 
-    .content {
-        width: 61% !important;
-    }
 
     .parag1 {
         margin-bottom: 0vh;
@@ -447,7 +447,7 @@
         width: 83vw;
     }
 
-  
+
 
     .Streetscape_image {
         height: 40vh;
@@ -669,5 +669,3 @@
         padding: 15px;
     }
 }
-
-
