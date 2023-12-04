@@ -133,9 +133,12 @@
     }
 
     .left-section7 {
-        background-position: center bottom;
-        flex: 400px;
-        position: relative;
+        display: none;
+    }
+
+    .invert-on-mobile {
+        display: flex;
+        flex-direction: column-reverse;
     }
 
     .s-sec2 {
@@ -177,16 +180,11 @@
 
     #eight {
         height: unset;
-        padding: 24px 24px 54px;
+        padding: 0;
     }
 
     .your-life-in-focus {
-        column-gap: 0;
-        right: 24px;
-    }
-
-    .your-life-in-focus img {
-        width: 48px;
+        display: none;
     }
 
     #nine {
@@ -394,6 +392,7 @@
     }
 
     #eight .swiper {
-        aspect-ratio: 4 / 5;
+        aspect-ratio: initial;
+        max-height: initial;
     }
 }
