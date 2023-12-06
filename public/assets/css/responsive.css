@@ -365,6 +365,13 @@
         align-content: space-around;
     }
 
+    .popup {
+    
+        left: 50vw;
+        padding: 19px;
+
+     }
+
     .box.style3 {
         top: 2vh;
         margin-left: 7vw;
