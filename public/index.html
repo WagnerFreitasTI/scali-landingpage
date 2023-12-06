@@ -171,9 +171,9 @@
 							ARE YOU A REALTOR?</label>
 						<input type="radio" id="yesRealtorCheckbox" name="areYouRealtor" value="yes"
 							class="radio-check">
-						<label for="yesRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">YES</label>
+						<label for="yesRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">Yes</label>
 						<input type="radio" id="noRealtorCheckbox" name="areYouRealtor" value="no" class="radio-check">
-						<label for="noRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">NO</label>
+						<label for="noRealtorCheckbox" style="padding-right: 1em;padding-left: 0.3em;">No</label>
 					</div>
 
 
@@ -184,8 +184,8 @@
 						<input type="checkbox" id="checkbox-phone" name="contact-method" value="Phone">
 						<label for="checkbox-phone" style="padding-right: 1em;padding-left: 0.3em;">Phone</label>
 
-						<input type="checkbox" id="email" name="contact-method" value="E-mail">
-						<label for="email"
+						<input type="checkbox" id="Checkemail" name="contact-method" value="E-mail">
+						<label for="Checkemail"
 							style="width: 6em; padding-right: 1em;padding-left: 0.3em;white-space: nowrap;">E-mail</label>
 
 						<input type="checkbox" id="text" name="contact-method" value="Text">
@@ -210,6 +210,12 @@
 
 						<button class="form-button g-recaptcha" data-sitekey="6Lc2tRspAAAAAMLNy6B2O23BagKcxv7DkrXMKrd5"
 							data-callback="onSubmit">Submit</button>
+
+
+
+						<!-- <button onclick="exibirModalSucesso()">Teste do exibirModalSucesso()</button> -->
+
+
 
 						<div id="check-modal">
 
@@ -329,8 +335,8 @@
 				"firstName": document.getElementById('fname').value,
 				"lastName": document.getElementById('lname').value,
 			},
-			"email": document.getElementById('email').value,
-			"phone": document.getElementById('phone').value,
+			"emails": document.querySelectorAll('input[name="email"]'),
+			"phones": document.querySelectorAll('input[name="phone"]'),
 			"city": document.getElementById('city').value,
 			"hearAbout": document.getElementById('hearAbout').value,
 			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
@@ -339,6 +345,7 @@
 			"agreeToConsent": document.getElementById('consentCheckbox').checked,
 			"ReCAPTCHA": document.getElementById('g-recaptcha-response').value
 		};
+		console.log('JSON a ser enviado:', formData);
 
 
 		fetch(formContatoRef.action, {
@@ -358,6 +365,7 @@
 			.then(data => {
 				console.log('Resposta do servidor:', data);
 				exibirModalSucesso();
+
 			})
 			.catch(error => {
 				console.error('Erro:', error);
@@ -365,11 +373,7 @@
 			});
 	}
 
-	function exibirModalSucesso() {
 
-		var modal = document.querySelector('.check-modal');
-		modal.style.display = 'flex';
-	}
 </script>
 
 
@@ -396,44 +400,34 @@
 	function openPrivacyModal() {
 		document.getElementById('privacy-modal').style.display = 'block';
 	}
-
 	function closePrivacyModal() {
 		document.getElementById('privacy-modal').style.display = 'none';
 	}
 	function openPrivacyModal2() {
 		document.getElementById('privacy-modal2').style.display = 'block';
 	}
-
 	function closePrivacyModal2() {
 		document.getElementById('privacy-modal2').style.display = 'none';
 	}
 
 </script>
 
-<script>
 
+<script>
 	function exibirModalSucesso() {
+		limparFormulario();
 
 		var modalContent = `
-            <h3 style="
-                font-family: 'Brinnan-Light';
-                font-size: 1.1em;
-                margin-bottom: 1rem;
-                font-weight: lighter;
-                text-align: justify;
-                margin: 1%;
-                line-height: normal;
-            ">
+            <p>
                 Thank you for your interest in Scale by Scale Projects. One of our Sales Representatives
                 will be in touch shortly to discuss how Scale can be your perfect home for everyday comfort.
-            </h3>
+            </p>
         `;
 
 		var popup = document.createElement('div');
+		popup.id = 'myModal';
 		popup.className = 'popup';
 		popup.innerHTML = modalContent;
-
-
 		var closeBtn = document.createElement('span');
 		closeBtn.className = 'close-btn-thanx';
 		closeBtn.innerHTML = '&times;';
@@ -442,13 +436,25 @@
 		};
 		popup.appendChild(closeBtn);
 
+		window.onclick = function (event) {
+			if (event.target === popup) {
+				document.body.removeChild(popup);
+			}
+		};
 
 		document.body.appendChild(popup);
-
-
 		popup.style.display = 'block';
 	}
 </script>
+
+
+<script>
+	function limparFormulario() {
+		var formulario = document.getElementById("form-contato");
+		formulario.reset();
+	}
+</script>
+
 
 <script>
 	function showImage(element, imageSrc) {
