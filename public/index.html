@@ -335,8 +335,23 @@
 				"firstName": document.getElementById('fname').value,
 				"lastName": document.getElementById('lname').value,
 			},
-			"email": document.getElementById('email').value.split(',').map(email => email.trim()),
-			"phone": document.getElementById('phone').value.split(',').map(phone => phone.trim()),
+
+			"emails": [
+				{
+					"email": document.getElementById('email').value,
+					"type": "Personal",  // ou outro valor desejado
+					"primary": true
+				}
+				// Adicione mais objetos ao array se necessário
+			],
+			"phones": [
+				{
+					"phone": document.getElementById('phone').value,
+					"type": "Mobile",  // ou outro valor desejado
+					"primary": true
+				}
+				// Adicione mais objetos ao array se necessário
+			],
 			"hearAbout": document.getElementById('hearAbout').value,
 			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
 			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
