@@ -101,18 +101,25 @@
         height: auto !important;
         flex-direction: column;
         background: #e1cab8;
-        padding-top: 32px;
+        padding-top: 64px;
     }
 
     .amenities-logo {
-        position: static;
-        width: 100px
+        width: 100px;
+        top: -18px;
     }
 
     .Streetscape_image {
         height: auto;
         width: 98%;
         margin: 0;
+        padding: 32px
+    }
+
+    .Streetscape_image::before,
+    .Streetscape_image::after {
+        border-width: 0 12px 12px 0;
+        padding: 18px;
     }
 
     .amenities {
