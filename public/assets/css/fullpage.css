@@ -3810,7 +3810,7 @@ img {
     caret-color: transparent;
 }
 
-#four {
+#neighbourhood {
     overflow: hidden;
     width: 100%;
     display: flex;
@@ -3819,7 +3819,7 @@ img {
     justify-content: space-between;
 }
 
-#five {
+#homes {
     background-color: #be694b;
     height: auto;
     background-size: cover;

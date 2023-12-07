@@ -44,9 +44,9 @@
                 <img src="images/Scale1.png" alt="Logo Scale" class="logo-img" />
             </a>
 
-            <nav>
-                <a href="#four">PROJECTS</a>
-                <a href="#four">NEIGHBOURHOOD</a>
+            <nav id="menu-nav">
+                <a href="#neighbourhood">NEIGHBOURHOOD</a>
+                <a href="#homes">HOMES</a>
             </nav>
         </div>
 
@@ -163,10 +163,10 @@
             </div>
         </section>
 
-        <section id="four" class="main  right dark section-nap-scroll">
-
+        <section id="neighbourhood" class="main  right dark section-nap-scroll">
             <h3 class="location mobile-only">
-                LOCATION</h3>
+                LOCATION
+            </h3>
 
             <div id="menu">
                 <h3 class="location desktop-only">
@@ -192,7 +192,7 @@
             </div>
         </section>
 
-        <section id="five" class="main  right dark section-nap-scroll">
+        <section id="homes" class="main  right dark section-nap-scroll">
             <div class="text-sec3">
                 <img src="images/icon-sec5.png" alt="Icon Center" class="icon-center">
 
@@ -207,7 +207,7 @@
         <section id="six" class="main  right dark fullscreen section-nap-scroll">
             <div class="Streetscape_image">
                 <img src="images/scale-sec6.png" class="amenities-logo">
-            <img src="images/SCALI_01_Hero_Streetscape.jpg" alt="Streetscape" width="100%">
+                <img src="images/SCALI_01_Hero_Streetscape.jpg" alt="Streetscape" width="100%">
             </div>
             <h3 class="amenities">
                 <div class="textAmenitties">ENJOY OUR AMENITIES</div>
@@ -720,9 +720,25 @@
         return false;
     }
 
-    document.querySelector("#content4").addEventListener("click", function() {
+    document.querySelector("#content4").addEventListener("click", function () {
         const mobileZoomState = this.getAttribute("data-mobile-zoom") == "true"
         this.setAttribute("data-mobile-zoom", !mobileZoomState)
+    })
+
+    document.querySelectorAll("#menu-nav > a").forEach(element => {
+        element.addEventListener("click", function (event) {
+            event.preventDefault()
+            const targetId = element.getAttribute("href")
+            if (!targetId) alert("Error on navigation")
+
+            const targetElement = document.querySelector(targetId)
+            if (!targetElement) alert("Target element doesn't exists")
+
+            targetElement.scrollIntoView({
+                behavior: "smooth",
+                block: "center"
+            })
+        })
     })
 </script>
 

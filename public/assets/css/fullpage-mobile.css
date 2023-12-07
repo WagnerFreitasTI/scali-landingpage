@@ -361,7 +361,7 @@
         margin: 0
     }
 
-    #four {
+    #neighbourhood {
         display: grid;
         grid-template-columns: 1fr;
         row-gap: 24px;
@@ -370,7 +370,7 @@
         padding: 48px 0 32px;
     }
 
-    #four .location {
+    #neighbourhood .location {
         text-align: center !important;
         width: 100%;
     }
