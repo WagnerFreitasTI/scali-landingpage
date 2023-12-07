@@ -397,7 +397,8 @@
     }
 
     #content4[data-mobile-zoom = "true"] > img {
-        transform: scale(2.5);
+        width: 200%;
+        height: auto;
     }
 
     .textAmenitties {
