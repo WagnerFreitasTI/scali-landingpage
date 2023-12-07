@@ -367,7 +367,7 @@
         row-gap: 24px;
         height: auto !important;
         min-height: auto !important;
-        padding: 48px 5vw 32px;
+        padding: 48px 0 32px;
     }
 
     #four .location {
@@ -380,7 +380,8 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         column-gap: 16px;
-        width: 100%;
+        width: 90%;
+        margin: 0 auto;
         padding: 0;
     }
 
@@ -392,6 +393,11 @@
     #content4 {
         width: 100%;
         max-width: 100%;
+        overflow: scroll;
+    }
+
+    #content4[data-mobile-zoom = "true"] > img {
+        transform: scale(2.5);
     }
 
     .textAmenitties {

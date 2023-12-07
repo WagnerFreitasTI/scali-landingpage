@@ -186,7 +186,7 @@
                 <a href="#"
                     onclick="return showImage(this, 'images/Layers JPEG-PNG/TRANSPORTATION.png');">TRANSPORTATION</a>
             </div>
-            <div id="content4">
+            <div id="content4" data-mobile-zoom>
                 <img id="baseImage" src="images/Layers JPEG-PNG/SCALI_MAP_01_BASE_ICON.jpg" alt="Base Image">
                 <img id="overlayImage" src="images/Layers JPEG-PNG/FULL_MAP.jpg" alt="Overlay Image">
             </div>
@@ -719,6 +719,11 @@
         // Retorna false para desabilitar completamente o link
         return false;
     }
+
+    document.querySelector("#content4").addEventListener("click", function() {
+        const mobileZoomState = this.getAttribute("data-mobile-zoom") == "true"
+        this.setAttribute("data-mobile-zoom", !mobileZoomState)
+    })
 </script>
 
 <script src="assets/js/swiper-bundle.min.js"></script>
