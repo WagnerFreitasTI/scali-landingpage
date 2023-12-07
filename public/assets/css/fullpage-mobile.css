@@ -390,7 +390,8 @@
     }
 
     #content4 {
-        aspect-ratio: 1.56 / 1;
+        width: 100%;
+        max-width: 100%;
     }
 
     .textAmenitties {
