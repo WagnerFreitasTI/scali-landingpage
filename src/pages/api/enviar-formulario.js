@@ -1,10 +1,13 @@
 
 
 export default async function EnviarFormulario(req, res) {
-    const formData = req.body;
-    console.log('Dados do formulário recebidos:', formData);
 
-    // Faça a solicitação para a API do CRM Lasso
+    const formData = req.body;
+    const recap = formData.ReCAPTCHA;
+    delete formData.ReCAPTCHA;
+    console.log('Dados do enviados ao CRM', formData)
+
+
     try {
         const ReCAPTCHAresponse = await fetch('https://www.google.com/recaptcha/api/siteverify', {
             method: 'POST',
@@ -13,7 +16,7 @@ export default async function EnviarFormulario(req, res) {
             },
             body: new URLSearchParams({
                 secret: process.env.SECKEYS,
-                response: formData.ReCAPTCHA,
+                response: recap,
             })
         });
         const ReCAPTCHAdata = await ReCAPTCHAresponse.json()
@@ -22,10 +25,6 @@ export default async function EnviarFormulario(req, res) {
             res.status(500).json({ error: 'Erro interno do servidor' });
             return;
         }
-
-
-
-
         const response = await fetch('https://api.lassocrm.com/v1/registrants', {
             method: 'POST',
             headers: {
@@ -35,7 +34,7 @@ export default async function EnviarFormulario(req, res) {
             body: JSON.stringify(formData)
         });
 
-        // Verifique se a solicitação foi bem-sucedida
+
         if (response.ok) {
             const responseData = await response.json();
             console.log('Resposta da API do Lasso:', responseData);
