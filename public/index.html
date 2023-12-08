@@ -331,27 +331,18 @@
 		event.preventDefault()
 
 		var formData = {
+
 			"person": {
 				"firstName": document.getElementById('fname').value,
 				"lastName": document.getElementById('lname').value,
+				"contactPreference": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value)
 			},
-
-			"emails": [
-				{
-					"email": document.getElementById('email').value,
-					"type": "Personal",  // ou outro valor desejado
-					"primary": true
-				}
-				// Adicione mais objetos ao array se necessário
-			],
-			"phones": [
-				{
-					"phone": document.getElementById('phone').value,
-					"type": "Mobile",  // ou outro valor desejado
-					"primary": true
-				}
-				// Adicione mais objetos ao array se necessário
-			],
+			"sourceType": {
+				"sourceType": "Online Registration"
+			},
+			"email": document.getElementById('email').value,
+			"phone": document.getElementById('phone').value,
+			"city": document.getElementById('city').value,
 			"hearAbout": document.getElementById('hearAbout').value,
 			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
 			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
@@ -359,6 +350,8 @@
 			"agreeToConsent": document.getElementById('consentCheckbox').checked,
 			"ReCAPTCHA": document.getElementById('g-recaptcha-response').value
 		};
+		console.log('JSON a ser enviado:', formData);
+
 		console.log('JSON a ser enviado:', formData);
 
 
