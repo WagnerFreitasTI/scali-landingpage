@@ -330,7 +330,7 @@
 	function onSubmit() {
 		event.preventDefault()
 
-	var formData = {
+		var formData = {
 			"person": {
 				"firstName": document.getElementById('fname').value,
 				"lastName": document.getElementById('lname').value,
@@ -400,9 +400,11 @@
 			// "agreeToTerms": document.getElementById('termsCheckbox').checked,
 			"ReCAPTCHA": document.getElementById('g-recaptcha-response').value
 		};
-		console.log('JSON a ser enviado:', formData);
 
-	
+		console.log('JSON a ser enviado:', formData);
+		exibirModalSucesso();
+
+
 
 
 		fetch(formContatoRef.action, {
@@ -421,7 +423,7 @@
 			})
 			.then(data => {
 				console.log('Resposta do servidor:', data);
-				exibirModalSucesso();
+
 
 			})
 			.catch(error => {
@@ -490,12 +492,14 @@
 		closeBtn.innerHTML = '&times;';
 		closeBtn.onclick = function () {
 			document.body.removeChild(popup);
+			location.reload();
 		};
 		popup.appendChild(closeBtn);
 
 		window.onclick = function (event) {
 			if (event.target === popup) {
 				document.body.removeChild(popup);
+				location.reload();
 			}
 		};
 
@@ -503,6 +507,7 @@
 		popup.style.display = 'block';
 	}
 </script>
+
 
 
 <script>
