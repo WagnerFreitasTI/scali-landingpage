@@ -330,8 +330,7 @@
 	function onSubmit() {
 		event.preventDefault()
 
-		var formData = {
-
+	var formData = {
 			"person": {
 				"firstName": document.getElementById('fname').value,
 				"lastName": document.getElementById('lname').value,
@@ -340,19 +339,70 @@
 			"sourceType": {
 				"sourceType": "Online Registration"
 			},
-			"email": document.getElementById('email').value,
-			"phone": document.getElementById('phone').value,
-			"city": document.getElementById('city').value,
-			"hearAbout": document.getElementById('hearAbout').value,
-			"areYouRealtor": document.querySelector('input[name="areYouRealtor"]:checked').value,
-			"contactMethod": Array.from(document.querySelectorAll('input[name="contact-method"]:checked')).map(cb => cb.value),
-			//"agreeToTerms": document.getElementById('termsCheckbox').checked,
-			"agreeToConsent": document.getElementById('consentCheckbox').checked,
+			"emails": [
+				{
+					"email": document.getElementById('email').value,
+					"type": "Personal",
+					"primary": true
+				}
+			],
+			"phones": [
+				{
+					"phone": document.getElementById('phone').value,
+					"type": ""
+				}
+			],
+			"addresses": [
+				{
+					"city": document.getElementById('city').value,
+					"primary": true
+				}
+			],
+			"questions": [
+				{
+					"questionId": 1,
+					"type": "text",
+					"name": "How did you hear about us?",
+					"answers": [
+						{
+							"answerId": 1,
+							"answer": document.getElementById('hearAbout').value
+						}
+					]
+				},
+				{
+					"questionId": 2,
+					"type": "text",
+					"name": "ARE YOU A REALTOR?",
+					"answers": [
+						{
+							"answerId": 2,
+							"answer": document.querySelector('input[name="areYouRealtor"]:checked').value
+						}
+					]
+				},
+				{
+					"questionId": 3,
+					"type": "text",
+					"name": "Agree To Consent",
+					"answers": [
+						{
+							"answerId": 3,
+							"answer": document.getElementById('consentCheckbox').checked
+						}
+					]
+				}
+			],
+			"sendSalesRepAssignmentNotification": true,
+			"sendOptInEmail": true,
+
+
+			// "agreeToTerms": document.getElementById('termsCheckbox').checked,
 			"ReCAPTCHA": document.getElementById('g-recaptcha-response').value
 		};
 		console.log('JSON a ser enviado:', formData);
 
-		console.log('JSON a ser enviado:', formData);
+	
 
 
 		fetch(formContatoRef.action, {
