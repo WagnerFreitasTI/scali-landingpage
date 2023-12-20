@@ -178,6 +178,7 @@ section {
 
 .main-content {
     height: 100vh;
+    height: -webkit-fill-available;
     overflow-y: scroll;
     overflow-x: hidden;
 }
@@ -686,7 +687,6 @@ body {
 
 section {
     display: flex;
-    /* height: 100vh; */
 }
 
 
@@ -2695,6 +2695,7 @@ body {
     align-items: flex-end;
     justify-content: center;
     height: 100vh;
+    height: -webkit-fill-available;
     margin: 0;
     align-content: center;
     flex-wrap: nowrap;
@@ -2734,12 +2735,6 @@ input[type="radio"]:checked,
 input[type="checkbox"]:checked {
     background-color: #ffffff;
     /* Cor de fundo quando o checkbox está marcado */
-}
-
-.split-section-horizon {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
 }
 
 .form-button {
@@ -3758,6 +3753,7 @@ img {
     background-position: center;
     background-repeat: no-repeat;
     height: 100vh;
+    height: -webkit-fill-available;
     caret-color: transparent;
     padding: 5vw;
 }
@@ -3794,13 +3790,10 @@ img {
 #eleven {
     caret-color: transparent;
     height: 100vh;
+    height: -webkit-fill-available;
 }
 
-
-
-
 #contact {
-
     padding-bottom: 0;
 }
 
