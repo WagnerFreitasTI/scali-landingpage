@@ -181,7 +181,7 @@
     .left-half {
         width: 45%;
         height: auto;
-        background: url("../../images/mobile/SCALI_ST1_02_Hero_Dusk_view_R1.webp) center/cover no-repea"t;
+        background: url("../../images/mobile/SCALI_ST1_02_Hero_Dusk_view_R1.webp") center/cover no-repeat;
         background-position: 85% 25%;
     }
 
@@ -381,6 +381,7 @@
     .text3 {
         bottom: 6%;
     }
+
 
 
 
